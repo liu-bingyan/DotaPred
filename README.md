@@ -79,6 +79,25 @@ the rating, and the within-event version is *negative* (−1.283, t = −1.13).
 Betting the head-to-head alone hits 54.9% where the rating hits 66.9%; in the 84
 series where the two disagree, the rating is right 64.3% of the time.
 
+**The model beats Polymarket on this tournament's own group stage.** Taking the
+last traded price ~9 minutes before each series and refitting the model per
+series on prior data only, over 41 TI2026 group-stage series: log-loss 0.4384
+vs the market's 0.5451 (t = +3.38), and 0.4647 vs 0.5451 (t = +2.95) using the
+pre-tournament production config, which rules out hyperparameter contamination.
+The Murphy decomposition says where the edge comes from: the market is *better*
+calibrated (reliability 0.0233 vs 0.0393) and we win entirely on resolution
+(0.1036 vs 0.0441). Discrimination, not calibration — which is also why a 50/50
+blend is worse than either.
+
+**We are under-confident, not over-confident.** Our probabilities are more
+extreme than Polymarket's (logit slope 1.87), which looked like overconfidence
+until it was tested against outcomes rather than against the market. Fitting
+`logit(result) = a + b·logit(forecast)` gives b = 1.36 (SE 0.20) over 385
+post-break series and b = 1.68 (SE 0.56) on TI2026 — b > 1 means the forecasts
+should be pushed further from 0.5, not shrunk toward it. Method borrowed from a
+prior college-football project; the addition that mattered was fitting the slope
+against results instead of against the market.
+
 **The ambiguous scoring rule turned out not to matter.** The client says only
 "pick the team you think is going to win each series", which leaves open whether
 a pick still counts when the team arrives at that node by a different path.
@@ -178,6 +197,9 @@ python3 scripts/fetch_premium_player_stats.py  # 80k player-game rows, premium t
 python3 scripts/player_form.py                 # does player form survive the break?
 python3 scripts/ti_player_form.py              # the 40 playoff players right now
 python3 scripts/h2h_value.py                   # is head-to-head worth anything?
+python3 scripts/market_compare.py              # Polymarket-implied strengths
+python3 scripts/market_backtest.py             # model vs market, same series
+python3 scripts/calibration.py                 # reliability + Brier decomposition
 ```
 
 ## Data sources
