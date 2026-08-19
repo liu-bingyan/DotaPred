@@ -1,0 +1,793 @@
+{
+ "league_id": 19719,
+ "teams": {
+  "Team Vision": {
+   "team_id": 9572001,
+   "swiss": "4-0",
+   "standing": 1,
+   "game_win_pct": 80,
+   "opp_match_wins": 10
+  },
+  "Team Liquid": {
+   "team_id": 2163,
+   "swiss": "4-1",
+   "standing": 2,
+   "game_win_pct": 64,
+   "opp_match_wins": 13
+  },
+  "Nigma Galaxy": {
+   "team_id": 10136357,
+   "swiss": "4-1",
+   "standing": 2,
+   "game_win_pct": 80,
+   "opp_match_wins": 12
+  },
+  "Team Spirit": {
+   "team_id": 7119388,
+   "swiss": "3-2",
+   "standing": 3,
+   "game_win_pct": 54,
+   "opp_match_wins": 16
+  },
+  "Iron Wing": {
+   "team_id": 10150413,
+   "swiss": "3-2",
+   "standing": 3,
+   "game_win_pct": 57,
+   "opp_match_wins": 15
+  },
+  "Team Falcons": {
+   "team_id": 9247354,
+   "swiss": "3-2",
+   "standing": 3,
+   "game_win_pct": 53,
+   "opp_match_wins": 14
+  },
+  "Aurora Gaming": {
+   "team_id": 9467224,
+   "swiss": "3-2",
+   "standing": 3,
+   "game_win_pct": 58,
+   "opp_match_wins": 13
+  },
+  "LGD Gaming": {
+   "team_id": 10150538,
+   "swiss": "3-2",
+   "standing": 3,
+   "game_win_pct": 53,
+   "opp_match_wins": 12
+  },
+  "BoomBoys": {
+   "team_id": 8255888,
+   "swiss": "2-3",
+   "standing": 4,
+   "game_win_pct": 41,
+   "opp_match_wins": 14
+  },
+  "Vici Gaming": {
+   "team_id": 726228,
+   "swiss": "2-3",
+   "standing": 4,
+   "game_win_pct": 33,
+   "opp_match_wins": 13
+  },
+  "Team Yandex": {
+   "team_id": 9823272,
+   "swiss": "2-3",
+   "standing": 4,
+   "game_win_pct": 50,
+   "opp_match_wins": 12
+  },
+  "Team Resilience": {
+   "team_id": 5017210,
+   "swiss": "2-3",
+   "standing": 4,
+   "game_win_pct": 53,
+   "opp_match_wins": 11
+  },
+  "Gamerlegion": {
+   "team_id": 9964962,
+   "swiss": "2-3",
+   "standing": 4,
+   "game_win_pct": 50,
+   "opp_match_wins": 10
+  },
+  "Xtreme Gaming": {
+   "team_id": 8261500,
+   "swiss": "1-4",
+   "standing": 5,
+   "game_win_pct": 27,
+   "opp_match_wins": 10
+  },
+  "OG": {
+   "team_id": 2586976,
+   "swiss": "1-4",
+   "standing": 5,
+   "game_win_pct": 18,
+   "opp_match_wins": 10
+  },
+  "Huligani": {
+   "team_id": 10149530,
+   "swiss": "0-4",
+   "standing": 6,
+   "game_win_pct": 20,
+   "opp_match_wins": 6
+  }
+ },
+ "swiss": [
+  {
+   "node_id": 1,
+   "name": "Match 1.A",
+   "team_1": "Team Falcons",
+   "team_2": "LGD Gaming",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "Team Falcons"
+  },
+  {
+   "node_id": 2,
+   "name": "Match 2.A",
+   "team_1": "Iron Wing",
+   "team_2": "Nigma Galaxy",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Iron Wing"
+  },
+  {
+   "node_id": 3,
+   "name": "Match 3.A",
+   "team_1": "BoomBoys",
+   "team_2": "OG",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "BoomBoys"
+  },
+  {
+   "node_id": 4,
+   "name": "Match 4.A",
+   "team_1": "Team Vision",
+   "team_2": "Team Resilience",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "Team Vision"
+  },
+  {
+   "node_id": 5,
+   "name": "Match 1.B",
+   "team_1": "Team Spirit",
+   "team_2": "Xtreme Gaming",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Team Spirit"
+  },
+  {
+   "node_id": 6,
+   "name": "Match 2.B",
+   "team_1": "Team Liquid",
+   "team_2": "Vici Gaming",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Team Liquid"
+  },
+  {
+   "node_id": 7,
+   "name": "Match 3.B",
+   "team_1": "Aurora Gaming",
+   "team_2": "Gamerlegion",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Aurora Gaming"
+  },
+  {
+   "node_id": 8,
+   "name": "Match 4.B",
+   "team_1": "Team Yandex",
+   "team_2": "Huligani",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Team Yandex"
+  },
+  {
+   "node_id": 28,
+   "name": "Match 5.A",
+   "team_1": "Team Vision",
+   "team_2": "Team Falcons",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "Team Vision"
+  },
+  {
+   "node_id": 29,
+   "name": "Match 6.A",
+   "team_1": "BoomBoys",
+   "team_2": "Iron Wing",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "BoomBoys"
+  },
+  {
+   "node_id": 30,
+   "name": "Match 7.A",
+   "team_1": "LGD Gaming",
+   "team_2": "Team Resilience",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "LGD Gaming"
+  },
+  {
+   "node_id": 31,
+   "name": "Match 8.A",
+   "team_1": "Nigma Galaxy",
+   "team_2": "OG",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Nigma Galaxy"
+  },
+  {
+   "node_id": 32,
+   "name": "Match 5.B",
+   "team_1": "Team Spirit",
+   "team_2": "Aurora Gaming",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Team Spirit"
+  },
+  {
+   "node_id": 33,
+   "name": "Match 6.B",
+   "team_1": "Team Yandex",
+   "team_2": "Team Liquid",
+   "score": [
+    1,
+    2
+   ],
+   "winner": "Team Liquid"
+  },
+  {
+   "node_id": 34,
+   "name": "Match 7.B",
+   "team_1": "Xtreme Gaming",
+   "team_2": "Gamerlegion",
+   "score": [
+    0,
+    2
+   ],
+   "winner": "Gamerlegion"
+  },
+  {
+   "node_id": 35,
+   "name": "Match 8.B",
+   "team_1": "Huligani",
+   "team_2": "Vici Gaming",
+   "score": [
+    1,
+    2
+   ],
+   "winner": "Vici Gaming"
+  },
+  {
+   "node_id": 36,
+   "name": "Match 9.A",
+   "team_1": "BoomBoys",
+   "team_2": "Team Vision",
+   "score": [
+    0,
+    2
+   ],
+   "winner": "Team Vision"
+  },
+  {
+   "node_id": 37,
+   "name": "Match 10.A",
+   "team_1": "Iron Wing",
+   "team_2": "Team Falcons",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "Iron Wing"
+  },
+  {
+   "node_id": 38,
+   "name": "Match 11.A",
+   "team_1": "LGD Gaming",
+   "team_2": "Nigma Galaxy",
+   "score": [
+    0,
+    2
+   ],
+   "winner": "Nigma Galaxy"
+  },
+  {
+   "node_id": 39,
+   "name": "Match 12.A",
+   "team_1": "Team Resilience",
+   "team_2": "OG",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Team Resilience"
+  },
+  {
+   "node_id": 40,
+   "name": "Match 9.B",
+   "team_1": "Team Liquid",
+   "team_2": "Team Spirit",
+   "score": [
+    1,
+    2
+   ],
+   "winner": "Team Spirit"
+  },
+  {
+   "node_id": 41,
+   "name": "Match 10.B",
+   "team_1": "Aurora Gaming",
+   "team_2": "Team Yandex",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "Aurora Gaming"
+  },
+  {
+   "node_id": 42,
+   "name": "Match 11.B",
+   "team_1": "Vici Gaming",
+   "team_2": "Gamerlegion",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "Vici Gaming"
+  },
+  {
+   "node_id": 43,
+   "name": "Match 12.B",
+   "team_1": "Xtreme Gaming",
+   "team_2": "Huligani",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Xtreme Gaming"
+  },
+  {
+   "node_id": 44,
+   "name": "Match 13",
+   "team_1": "OG",
+   "team_2": "Huligani",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "OG"
+  },
+  {
+   "node_id": 45,
+   "name": "Match 14",
+   "team_1": "LGD Gaming",
+   "team_2": "Xtreme Gaming",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "LGD Gaming"
+  },
+  {
+   "node_id": 46,
+   "name": "Match 15",
+   "team_1": "Team Falcons",
+   "team_2": "Gamerlegion",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "Team Falcons"
+  },
+  {
+   "node_id": 47,
+   "name": "Match 16",
+   "team_1": "Team Resilience",
+   "team_2": "Team Yandex",
+   "score": [
+    1,
+    2
+   ],
+   "winner": "Team Yandex"
+  },
+  {
+   "node_id": 48,
+   "name": "Match 17",
+   "team_1": "Team Spirit",
+   "team_2": "Team Vision",
+   "score": [
+    0,
+    2
+   ],
+   "winner": "Team Vision"
+  },
+  {
+   "node_id": 49,
+   "name": "Match 18",
+   "team_1": "Iron Wing",
+   "team_2": "Team Liquid",
+   "score": [
+    1,
+    2
+   ],
+   "winner": "Team Liquid"
+  },
+  {
+   "node_id": 50,
+   "name": "Match 19",
+   "team_1": "BoomBoys",
+   "team_2": "Aurora Gaming",
+   "score": [
+    0,
+    2
+   ],
+   "winner": "Aurora Gaming"
+  },
+  {
+   "node_id": 51,
+   "name": "Match 20",
+   "team_1": "Nigma Galaxy",
+   "team_2": "Vici Gaming",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Nigma Galaxy"
+  },
+  {
+   "node_id": 52,
+   "name": "Match 21",
+   "team_1": "Team Resilience",
+   "team_2": "Xtreme Gaming",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Team Resilience"
+  },
+  {
+   "node_id": 53,
+   "name": "Match 22",
+   "team_1": "OG",
+   "team_2": "Gamerlegion",
+   "score": [
+    0,
+    2
+   ],
+   "winner": "Gamerlegion"
+  },
+  {
+   "node_id": 54,
+   "name": "Match 23",
+   "team_1": "LGD Gaming",
+   "team_2": "Vici Gaming",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "LGD Gaming"
+  },
+  {
+   "node_id": 55,
+   "name": "Match 24",
+   "team_1": "BoomBoys",
+   "team_2": "Team Falcons",
+   "score": [
+    1,
+    2
+   ],
+   "winner": "Team Falcons"
+  },
+  {
+   "node_id": 56,
+   "name": "Match 25",
+   "team_1": "Team Liquid",
+   "team_2": "Aurora Gaming",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "Team Liquid"
+  },
+  {
+   "node_id": 57,
+   "name": "Match 26",
+   "team_1": "Nigma Galaxy",
+   "team_2": "Team Spirit",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Nigma Galaxy"
+  },
+  {
+   "node_id": 58,
+   "name": "Match 27",
+   "team_1": "Team Yandex",
+   "team_2": "Iron Wing",
+   "score": [
+    1,
+    2
+   ],
+   "winner": "Iron Wing"
+  }
+ ],
+ "elimination": [
+  {
+   "node_id": 9,
+   "name": "Match 28",
+   "team_1": "Team Falcons",
+   "team_2": "Vici Gaming",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Team Falcons"
+  },
+  {
+   "node_id": 10,
+   "name": "Match 29",
+   "team_1": "Aurora Gaming",
+   "team_2": "BoomBoys",
+   "score": [
+    0,
+    2
+   ],
+   "winner": "BoomBoys"
+  },
+  {
+   "node_id": 11,
+   "name": "Match 30",
+   "team_1": "Team Spirit",
+   "team_2": "Team Resilience",
+   "score": [
+    2,
+    1
+   ],
+   "winner": "Team Spirit"
+  },
+  {
+   "node_id": 12,
+   "name": "Match 31",
+   "team_1": "Iron Wing",
+   "team_2": "Gamerlegion",
+   "score": [
+    2,
+    0
+   ],
+   "winner": "Iron Wing"
+  },
+  {
+   "node_id": 13,
+   "name": "Match 32",
+   "team_1": "LGD Gaming",
+   "team_2": "Team Yandex",
+   "score": [
+    1,
+    2
+   ],
+   "winner": "Team Yandex"
+  }
+ ],
+ "playoff": [
+  {
+   "node_id": 14,
+   "label": "UB-A",
+   "bo": 3,
+   "team_1": "Iron Wing",
+   "team_2": "Team Spirit",
+   "from_1": null,
+   "from_2": null
+  },
+  {
+   "node_id": 15,
+   "label": "UB-B",
+   "bo": 3,
+   "team_1": "Team Vision",
+   "team_2": "BoomBoys",
+   "from_1": null,
+   "from_2": null
+  },
+  {
+   "node_id": 16,
+   "label": "UB-C",
+   "bo": 3,
+   "team_1": "Team Liquid",
+   "team_2": "Team Yandex",
+   "from_1": null,
+   "from_2": null
+  },
+  {
+   "node_id": 17,
+   "label": "UB-D",
+   "bo": 3,
+   "team_1": "Nigma Galaxy",
+   "team_2": "Team Falcons",
+   "from_1": null,
+   "from_2": null
+  },
+  {
+   "node_id": 18,
+   "label": "UB-E",
+   "bo": 3,
+   "team_1": null,
+   "team_2": null,
+   "from_1": [
+    "W",
+    14
+   ],
+   "from_2": [
+    "W",
+    15
+   ]
+  },
+  {
+   "node_id": 19,
+   "label": "UB-F",
+   "bo": 3,
+   "team_1": null,
+   "team_2": null,
+   "from_1": [
+    "W",
+    16
+   ],
+   "from_2": [
+    "W",
+    17
+   ]
+  },
+  {
+   "node_id": 20,
+   "label": "UB-G",
+   "bo": 3,
+   "team_1": null,
+   "team_2": null,
+   "from_1": [
+    "W",
+    18
+   ],
+   "from_2": [
+    "W",
+    19
+   ]
+  },
+  {
+   "node_id": 22,
+   "label": "LB1-1",
+   "bo": 3,
+   "team_1": null,
+   "team_2": null,
+   "from_1": [
+    "L",
+    14
+   ],
+   "from_2": [
+    "L",
+    15
+   ]
+  },
+  {
+   "node_id": 23,
+   "label": "LB1-2",
+   "bo": 3,
+   "team_1": null,
+   "team_2": null,
+   "from_1": [
+    "L",
+    16
+   ],
+   "from_2": [
+    "L",
+    17
+   ]
+  },
+  {
+   "node_id": 24,
+   "label": "LB2-1",
+   "bo": 3,
+   "team_1": null,
+   "team_2": null,
+   "from_1": [
+    "L",
+    19
+   ],
+   "from_2": [
+    "W",
+    22
+   ]
+  },
+  {
+   "node_id": 25,
+   "label": "LB2-2",
+   "bo": 3,
+   "team_1": null,
+   "team_2": null,
+   "from_1": [
+    "L",
+    18
+   ],
+   "from_2": [
+    "W",
+    23
+   ]
+  },
+  {
+   "node_id": 26,
+   "label": "LB3",
+   "bo": 3,
+   "team_1": null,
+   "team_2": null,
+   "from_1": [
+    "W",
+    24
+   ],
+   "from_2": [
+    "W",
+    25
+   ]
+  },
+  {
+   "node_id": 27,
+   "label": "LB-F",
+   "bo": 3,
+   "team_1": null,
+   "team_2": null,
+   "from_1": [
+    "L",
+    20
+   ],
+   "from_2": [
+    "W",
+    26
+   ]
+  },
+  {
+   "node_id": 21,
+   "label": "GF",
+   "bo": 5,
+   "team_1": null,
+   "team_2": null,
+   "from_1": [
+    "W",
+    20
+   ],
+   "from_2": [
+    "W",
+    27
+   ]
+  }
+ ]
+}

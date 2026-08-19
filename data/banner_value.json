@@ -1,0 +1,2930 @@
+{
+ "Aurora Gaming|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9244.203636241664,
+  "best_p25": 8588.452711500002,
+  "best_sd": 924.1178202002885,
+  "ev_pick": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "ev_mean": 9120.658088089978,
+  "ev_rank": 2,
+  "n_combos": 90,
+  "gap_pct": 1.3545683541521523,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9244.203636241664
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9120.658088089978
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 9032.493264483
+   },
+   {
+    "stats": [
+     "kills",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8409.068282306302
+   },
+   {
+    "stats": [
+     "kills",
+     "deaths",
+     "teamfight"
+    ],
+    "mean": 8400.85695695464
+   }
+  ]
+ },
+ "BoomBoys|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9102.887416420419,
+  "best_p25": 8620.4814855,
+  "best_sd": 681.2459760847039,
+  "ev_pick": [
+   "deaths",
+   "gpm",
+   "teamfight"
+  ],
+  "ev_mean": 8950.364417832003,
+  "ev_rank": 2,
+  "n_combos": 90,
+  "gap_pct": 1.7040981960973713,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9102.887416420419
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8950.364417832003
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8893.271859954966
+   },
+   {
+    "stats": [
+     "deaths",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 8538.417010136667
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "roshan"
+    ],
+    "mean": 8490.69
+   }
+  ]
+ },
+ "GamerLegion|core": {
+  "best": [
+   "deaths",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 8617.411225742944,
+  "best_p25": 8260.0720975,
+  "best_sd": 595.5499822750799,
+  "ev_pick": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "ev_mean": 8617.411225742944,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8617.411225742944
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8515.252732415584
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8359.459402683951
+   },
+   {
+    "stats": [
+     "deaths",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 7886.717664363586
+   },
+   {
+    "stats": [
+     "gpm",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 7790.532241478596
+   }
+  ]
+ },
+ "Huligani|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9355.632860860022,
+  "best_p25": 8738.5543595,
+  "best_sd": 917.4707788318703,
+  "ev_pick": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "ev_mean": 9355.632860860022,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9355.632860860022
+   },
+   {
+    "stats": [
+     "cs",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 9039.235778250688
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8871.792398779991
+   },
+   {
+    "stats": [
+     "gpm",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 8823.848268676737
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8765.823507349987
+   }
+  ]
+ },
+ "Iron Wing|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9313.573226404971,
+  "best_p25": 8658.3941125,
+  "best_sd": 1002.6001005176383,
+  "ev_pick": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "ev_mean": 9313.573226404971,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9313.573226404971
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8920.581169053985
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8836.954882696971
+   },
+   {
+    "stats": [
+     "kills",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8329.531346813288
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "roshan"
+    ],
+    "mean": 8168.28425
+   }
+  ]
+ },
+ "LGD Gaming|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9775.939059785047,
+  "best_p25": 9065.302584,
+  "best_sd": 987.3957215292368,
+  "ev_pick": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "ev_mean": 9775.939059785047,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9775.939059785047
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 9246.436441650045
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9123.302788992038
+   },
+   {
+    "stats": [
+     "kills",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8986.682137854696
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "roshan"
+    ],
+    "mean": 8894.951833333333
+   }
+  ]
+ },
+ "Nigma Galaxy|core": {
+  "best": [
+   "deaths",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 8665.064074652348,
+  "best_p25": 8308.862339,
+  "best_sd": 588.0381901309978,
+  "ev_pick": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "ev_mean": 8665.064074652348,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8665.064074652348
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8516.64207769905
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8395.386203219015
+   },
+   {
+    "stats": [
+     "kills",
+     "deaths",
+     "teamfight"
+    ],
+    "mean": 8075.202241052999
+   },
+   {
+    "stats": [
+     "kills",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8032.648790082368
+   }
+  ]
+ },
+ "OG|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9548.843093466327,
+  "best_p25": 8839.900531,
+  "best_sd": 1126.5361999882289,
+  "ev_pick": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "ev_mean": 9128.949525208003,
+  "ev_rank": 3,
+  "n_combos": 90,
+  "gap_pct": 4.599582537934516,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9548.843093466327
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 9320.726592207991
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9128.949525208003
+   },
+   {
+    "stats": [
+     "cs",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 9120.824633502665
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "roshan"
+    ],
+    "mean": 9032.336416666667
+   }
+  ]
+ },
+ "Team Falcons|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9166.555171114273,
+  "best_p25": 8678.27363,
+  "best_sd": 684.6957354249753,
+  "ev_pick": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "ev_mean": 9166.555171114273,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9166.555171114273
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8819.487137140653
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8805.192616192942
+   },
+   {
+    "stats": [
+     "cs",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 8498.132515088952
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "roshan"
+    ],
+    "mean": 8447.104083333334
+   }
+  ]
+ },
+ "Team Liquid|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 8936.533666310694,
+  "best_p25": 8339.808282,
+  "best_sd": 828.9178334162394,
+  "ev_pick": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "ev_mean": 8936.533666310694,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8936.533666310694
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8719.067877315652
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8595.828844168018
+   },
+   {
+    "stats": [
+     "cs",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 8083.647663103688
+   },
+   {
+    "stats": [
+     "deaths",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 7985.740229489652
+   }
+  ]
+ },
+ "Team Resilience|core": {
+  "best": [
+   "deaths",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 8551.00842576662,
+  "best_p25": 8107.369224,
+  "best_sd": 668.2870882207347,
+  "ev_pick": [
+   "deaths",
+   "gpm",
+   "teamfight"
+  ],
+  "ev_mean": 8551.00842576662,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8551.00842576662
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8402.471144650945
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8274.439430837976
+   },
+   {
+    "stats": [
+     "deaths",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 7722.239645874613
+   },
+   {
+    "stats": [
+     "gpm",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 7521.655110636285
+   }
+  ]
+ },
+ "Team Spirit|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9257.944419439329,
+  "best_p25": 8799.927988,
+  "best_sd": 634.2221228545696,
+  "ev_pick": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "ev_mean": 9257.944419439329,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9257.944419439329
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9026.535956308673
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 8899.459797293988
+   },
+   {
+    "stats": [
+     "cs",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 8776.412975980982
+   },
+   {
+    "stats": [
+     "gpm",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 8673.570734318626
+   }
+  ]
+ },
+ "Team Vision|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9619.930676703421,
+  "best_p25": 8909.022616,
+  "best_sd": 1030.090824280741,
+  "ev_pick": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "ev_mean": 9352.477164337366,
+  "ev_rank": 4,
+  "n_combos": 90,
+  "gap_pct": 2.8597077294762334,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9619.930676703421
+   },
+   {
+    "stats": [
+     "cs",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 9418.229311662477
+   },
+   {
+    "stats": [
+     "gpm",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 9366.178901124013
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9352.477164337366
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 9316.48295223622
+   }
+  ]
+ },
+ "Team Yandex|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9623.088129362293,
+  "best_p25": 8972.301657,
+  "best_sd": 897.1053114060747,
+  "ev_pick": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "ev_mean": 9418.794979010649,
+  "ev_rank": 4,
+  "n_combos": 90,
+  "gap_pct": 2.1689945561709605,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9623.088129362293
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "roshan"
+    ],
+    "mean": 9499.473083333334
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "roshan"
+    ],
+    "mean": 9477.822333333334
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9418.794979010649
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "roshan"
+    ],
+    "mean": 9338.59675
+   }
+  ]
+ },
+ "Vici Gaming|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9514.85179713864,
+  "best_p25": 9013.795573,
+  "best_sd": 752.124959575166,
+  "ev_pick": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "ev_mean": 9514.85179713864,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9514.85179713864
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "roshan"
+    ],
+    "mean": 9176.9065
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 9176.794270046941
+   },
+   {
+    "stats": [
+     "cs",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 9117.862765768632
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9022.637667228595
+   }
+  ]
+ },
+ "Xtreme Gaming|core": {
+  "best": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "best_mean": 9675.882515306037,
+  "best_p25": 9050.826364,
+  "best_sd": 902.8452401071952,
+  "ev_pick": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "ev_mean": 9675.882515306037,
+  "ev_rank": 1,
+  "n_combos": 90,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 9675.882515306037
+   },
+   {
+    "stats": [
+     "deaths",
+     "cs",
+     "teamfight"
+    ],
+    "mean": 9329.068466745028
+   },
+   {
+    "stats": [
+     "cs",
+     "towers",
+     "teamfight"
+    ],
+    "mean": 8992.7481991217
+   },
+   {
+    "stats": [
+     "deaths",
+     "gpm",
+     "teamfight"
+    ],
+    "mean": 8941.479982557685
+   },
+   {
+    "stats": [
+     "cs",
+     "gpm",
+     "roshan"
+    ],
+    "mean": 8645.85275
+   }
+  ]
+ },
+ "Aurora Gaming|mid": {
+  "best": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10556.630480873971,
+  "best_p25": 10120.111875,
+  "best_sd": 662.6944836461907,
+  "ev_pick": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10556.630480873971,
+  "ev_rank": 1,
+  "n_combos": 144,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10556.630480873971
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10376.456841269983
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10145.478218750637
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9666.170664548637
+   },
+   {
+    "stats": [
+     "towers",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 8659.226382669332
+   }
+  ]
+ },
+ "BoomBoys|mid": {
+  "best": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10647.859334269991,
+  "best_p25": 10101.939117000002,
+  "best_sd": 787.0984596364443,
+  "ev_pick": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10647.859334269991,
+  "ev_rank": 1,
+  "n_combos": 144,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10647.859334269991
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10546.799729054019
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10238.376072738689
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9859.008375244011
+   },
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "roshan"
+    ],
+    "mean": 9061.9055
+   }
+  ]
+ },
+ "GamerLegion|mid": {
+  "best": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 9853.726766079957,
+  "best_p25": 9258.128568,
+  "best_sd": 921.7806336757919,
+  "ev_pick": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 9853.726766079957,
+  "ev_rank": 1,
+  "n_combos": 144,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9853.726766079957
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9754.031800167977
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9607.889194544634
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9259.415081859303
+   },
+   {
+    "stats": [
+     "towers",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 7891.849456775342
+   }
+  ]
+ },
+ "Huligani|mid": {
+  "best": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10143.301837857978,
+  "best_p25": 9459.733884,
+  "best_sd": 1029.1056067458749,
+  "ev_pick": [
+   "gpm",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10044.805628658638,
+  "ev_rank": 2,
+  "n_combos": 144,
+  "gap_pct": 0.9805685927692083,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10143.301837857978
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10044.805628658638
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9950.50180119396
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9734.791331206634
+   },
+   {
+    "stats": [
+     "towers",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 7987.227346559983
+   }
+  ]
+ },
+ "Iron Wing|mid": {
+  "best": [
+   "cs",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10368.104633475996,
+  "best_p25": 9488.212983,
+  "best_sd": 1235.373341480593,
+  "ev_pick": [
+   "gpm",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10184.226451238674,
+  "ev_rank": 3,
+  "n_combos": 144,
+  "gap_pct": 1.8055193795789726,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10368.104633475996
+   },
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10349.317475614007
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10184.226451238674
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9577.104593903357
+   },
+   {
+    "stats": [
+     "towers",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 8791.55200977668
+   }
+  ]
+ },
+ "LGD Gaming|mid": {
+  "best": [
+   "cs",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10459.370127541977,
+  "best_p25": 9479.939658,
+  "best_sd": 1436.9068392913719,
+  "ev_pick": [
+   "gpm",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10017.355606272662,
+  "ev_rank": 3,
+  "n_combos": 144,
+  "gap_pct": 4.412487073859439,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10459.370127541977
+   },
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10170.620348548005
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10017.355606272662
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9365.91556727933
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "roshan"
+    ],
+    "mean": 8609.5375
+   }
+  ]
+ },
+ "Nigma Galaxy|mid": {
+  "best": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10484.832220393999,
+  "best_p25": 9938.989134,
+  "best_sd": 835.6693305542293,
+  "ev_pick": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10484.832220393999,
+  "ev_rank": 1,
+  "n_combos": 144,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10484.832220393999
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10223.062751728028
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10156.697950057332
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9606.433400494003
+   },
+   {
+    "stats": [
+     "towers",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 8774.410428072022
+   }
+  ]
+ },
+ "OG|mid": {
+  "best": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 9903.638772989954,
+  "best_p25": 9303.943265999998,
+  "best_sd": 914.4499822450312,
+  "ev_pick": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 9903.638772989954,
+  "ev_rank": 1,
+  "n_combos": 144,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9903.638772989954
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9516.849463167966
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9491.503894071975
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9278.584808269345
+   },
+   {
+    "stats": [
+     "towers",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 7873.758073695336
+   }
+  ]
+ },
+ "Team Falcons|mid": {
+  "best": [
+   "cs",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10115.88904289202,
+  "best_p25": 9185.631876,
+  "best_sd": 1293.5176921644816,
+  "ev_pick": [
+   "gpm",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 9823.876512734007,
+  "ev_rank": 3,
+  "n_combos": 144,
+  "gap_pct": 2.9724776138981213,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10115.88904289202
+   },
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9914.485089320002
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9823.876512734007
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9344.297390468691
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "roshan"
+    ],
+    "mean": 8392.512166666667
+   }
+  ]
+ },
+ "Team Liquid|mid": {
+  "best": [
+   "cs",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 11127.606919276002,
+  "best_p25": 10151.957010000002,
+  "best_sd": 1366.5780362208068,
+  "ev_pick": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10886.377840566076,
+  "ev_rank": 2,
+  "n_combos": 144,
+  "gap_pct": 2.2158800864970054,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 11127.606919276002
+   },
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10886.377840566076
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10766.67170170469
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10408.742990802722
+   },
+   {
+    "stats": [
+     "towers",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9400.143980626688
+   }
+  ]
+ },
+ "Team Resilience|mid": {
+  "best": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 9729.298541952036,
+  "best_p25": 9079.381487999999,
+  "best_sd": 973.4551746576312,
+  "ev_pick": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 9729.298541952036,
+  "ev_rank": 1,
+  "n_combos": 144,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9729.298541952036
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9115.938132886702
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 8858.984538344033
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 8322.655669586027
+   },
+   {
+    "stats": [
+     "deaths",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 7673.159996364007
+   }
+  ]
+ },
+ "Team Spirit|mid": {
+  "best": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10338.467900423992,
+  "best_p25": 9893.621796,
+  "best_sd": 652.1829266504662,
+  "ev_pick": [
+   "gpm",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10006.57439799198,
+  "ev_rank": 3,
+  "n_combos": 144,
+  "gap_pct": 3.3167544579352937,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10338.467900423992
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10067.382841038
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10006.57439799198
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9710.37142209931
+   },
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "roshan"
+    ],
+    "mean": 8204.6335
+   }
+  ]
+ },
+ "Team Vision|mid": {
+  "best": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10144.886742553934,
+  "best_p25": 9661.598109,
+  "best_sd": 708.9573654280221,
+  "ev_pick": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10144.886742553934,
+  "ev_rank": 1,
+  "n_combos": 144,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10144.886742553934
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9883.727366837964
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9666.41574121463
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 8934.537258829956
+   },
+   {
+    "stats": [
+     "towers",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 8151.293272436637
+   }
+  ]
+ },
+ "Team Yandex|mid": {
+  "best": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 9901.328023393979,
+  "best_p25": 9401.705955,
+  "best_sd": 740.3268110240127,
+  "ev_pick": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 9901.328023393979,
+  "ev_rank": 1,
+  "n_combos": 144,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9901.328023393979
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9483.113274132673
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9374.516667473985
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9088.390003946639
+   },
+   {
+    "stats": [
+     "towers",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 8152.654075632673
+   }
+  ]
+ },
+ "Vici Gaming|mid": {
+  "best": [
+   "cs",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10725.75002402398,
+  "best_p25": 9930.416406,
+  "best_sd": 1146.4844196969784,
+  "ev_pick": [
+   "cs",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10725.75002402398,
+  "ev_rank": 1,
+  "n_combos": 144,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10725.75002402398
+   },
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10424.266203981952
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10196.62102713795
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9509.365127047966
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "courier"
+    ],
+    "mean": 8528.1605
+   }
+  ]
+ },
+ "Xtreme Gaming|mid": {
+  "best": [
+   "cs",
+   "runes",
+   "teamfight"
+  ],
+  "best_mean": 10425.467844049977,
+  "best_p25": 9596.678367,
+  "best_sd": 1167.3312606505908,
+  "ev_pick": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "ev_mean": 10248.541595749986,
+  "ev_rank": 2,
+  "n_combos": 144,
+  "gap_pct": 1.7263553711228676,
+  "top5": [
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10425.467844049977
+   },
+   {
+    "stats": [
+     "deaths",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10248.541595749986
+   },
+   {
+    "stats": [
+     "gpm",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 10019.725186454656
+   },
+   {
+    "stats": [
+     "kills",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 9464.232084523952
+   },
+   {
+    "stats": [
+     "cs",
+     "runes",
+     "stuns"
+    ],
+    "mean": 8400.626740205318
+   }
+  ]
+ },
+ "Aurora Gaming|support": {
+  "best": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "best_mean": 8351.267937033004,
+  "best_p25": 7631.648504999999,
+  "best_sd": 998.4546675700591,
+  "ev_pick": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "ev_mean": 7929.050891351357,
+  "ev_rank": 3,
+  "n_combos": 36,
+  "gap_pct": 5.324938021802614,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 8351.267937033004
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7956.948460426332
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7929.050891351357
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6991.998374405001
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6740.390309015003
+   }
+  ]
+ },
+ "BoomBoys|support": {
+  "best": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "best_mean": 8410.708347348233,
+  "best_p25": 7798.6816340000005,
+  "best_sd": 834.1843725037805,
+  "ev_pick": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "ev_mean": 8410.708347348233,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8410.708347348233
+   },
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 7656.733823162938
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7470.152579075605
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6793.923671944968
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "stuns"
+    ],
+    "mean": 6588.890212570024
+   }
+  ]
+ },
+ "GamerLegion|support": {
+  "best": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "best_mean": 7878.883794183028,
+  "best_p25": 7332.255828,
+  "best_sd": 749.551533719631,
+  "ev_pick": [
+   "smokes",
+   "wards",
+   "teamfight"
+  ],
+  "ev_mean": 7806.782180550351,
+  "ev_rank": 3,
+  "n_combos": 36,
+  "gap_pct": 0.9235766025637231,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 7878.883794183028
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7863.271491590034
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7806.782180550351
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6714.980738262037
+   },
+   {
+    "stats": [
+     "runes",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 6468.473172224664
+   }
+  ]
+ },
+ "Huligani|support": {
+  "best": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "best_mean": 7862.829636032985,
+  "best_p25": 7301.920155,
+  "best_sd": 801.2345984137019,
+  "ev_pick": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "ev_mean": 7862.829636032985,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7862.829636032985
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7353.092661730337
+   },
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 7302.085245107987
+   },
+   {
+    "stats": [
+     "runes",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 6655.837281132986
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6556.694526628003
+   }
+  ]
+ },
+ "Iron Wing|support": {
+  "best": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "best_mean": 8046.394019936983,
+  "best_p25": 7621.6258259999995,
+  "best_sd": 618.1452158891159,
+  "ev_pick": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "ev_mean": 8046.394019936983,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 8046.394019936983
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7992.776305552038
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7759.688589656674
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6802.174282581014
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6619.909622134956
+   }
+  ]
+ },
+ "LGD Gaming|support": {
+  "best": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "best_mean": 9995.798844973759,
+  "best_p25": 9039.9096675,
+  "best_sd": 1309.2574208908975,
+  "ev_pick": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "ev_mean": 9995.798844973759,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 9995.798844973759
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 9600.516449053635
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 9511.711944512082
+   },
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "courier"
+    ],
+    "mean": 8448.687583333332
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 8384.545948640363
+   }
+  ]
+ },
+ "Nigma Galaxy|support": {
+  "best": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "best_mean": 8165.361936687631,
+  "best_p25": 7650.737104,
+  "best_sd": 724.6586199935765,
+  "ev_pick": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "ev_mean": 8165.361936687631,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8165.361936687631
+   },
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 7712.951475593939
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7625.897591700277
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6587.507757286965
+   },
+   {
+    "stats": [
+     "runes",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 6524.581159884633
+   }
+  ]
+ },
+ "OG|support": {
+  "best": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "best_mean": 8629.366924877988,
+  "best_p25": 8052.161926500001,
+  "best_sd": 807.5296470327643,
+  "ev_pick": [
+   "stacks",
+   "wards",
+   "teamfight"
+  ],
+  "ev_mean": 8629.366924877988,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 8629.366924877988
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8532.8240814183
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8026.023977217343
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 7406.984981126974
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6819.960896062005
+   }
+  ]
+ },
+ "Team Falcons|support": {
+  "best": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "best_mean": 8021.519022653937,
+  "best_p25": 7567.2735255,
+  "best_sd": 645.7507642390271,
+  "ev_pick": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "ev_mean": 8021.519022653937,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 8021.519022653937
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7951.464993599959
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7665.072363992959
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6932.105104363963
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6791.950324653974
+   }
+  ]
+ },
+ "Team Liquid|support": {
+  "best": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "best_mean": 8423.505810779985,
+  "best_p25": 7719.3206414999995,
+  "best_sd": 932.3047217382218,
+  "ev_pick": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "ev_mean": 8423.505810779985,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 8423.505810779985
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8375.353976960312
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8171.485588240971
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6762.560363000987
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6761.209654199003
+   }
+  ]
+ },
+ "Team Resilience|support": {
+  "best": [
+   "stacks",
+   "smokes",
+   "teamfight"
+  ],
+  "best_mean": 8397.30012588201,
+  "best_p25": 7763.177392,
+  "best_sd": 906.239039397829,
+  "ev_pick": [
+   "stacks",
+   "smokes",
+   "teamfight"
+  ],
+  "ev_mean": 8397.30012588201,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8397.30012588201
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8153.184735892024
+   },
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 7984.993350896989
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 7027.289662323974
+   },
+   {
+    "stats": [
+     "runes",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 6792.386281344706
+   }
+  ]
+ },
+ "Team Spirit|support": {
+  "best": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "best_mean": 8748.493476695987,
+  "best_p25": 8069.433516,
+  "best_sd": 981.5207128819442,
+  "ev_pick": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "ev_mean": 8748.493476695987,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 8748.493476695987
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8381.486779573637
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8141.086328485668
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 7256.919865567999
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6826.245965366011
+   }
+  ]
+ },
+ "Team Vision|support": {
+  "best": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "best_mean": 8041.823926546338,
+  "best_p25": 7470.861892499999,
+  "best_sd": 795.4530385065352,
+  "ev_pick": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "ev_mean": 8041.823926546338,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8041.823926546338
+   },
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 7927.094704164012
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7730.243788260342
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6758.541072411975
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6544.962618921965
+   }
+  ]
+ },
+ "Team Yandex|support": {
+  "best": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "best_mean": 8313.705721032004,
+  "best_p25": 7787.25,
+  "best_sd": 755.6175752886481,
+  "ev_pick": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "ev_mean": 8313.705721032004,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 8313.705721032004
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7956.003199383651
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7860.410518098657
+   },
+   {
+    "stats": [
+     "stacks",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 7176.947455806002
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 6887.610934537989
+   }
+  ]
+ },
+ "Vici Gaming|support": {
+  "best": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "best_mean": 9117.048600900898,
+  "best_p25": 8365.777353000001,
+  "best_sd": 1057.0775660901427,
+  "ev_pick": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "ev_mean": 9117.048600900898,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 9117.048600900898
+   },
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 8327.916779057945
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 7722.387786682964
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 7383.617074579955
+   },
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "firstblood"
+    ],
+    "mean": 6977.075833333333
+   }
+  ]
+ },
+ "Xtreme Gaming|support": {
+  "best": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "best_mean": 8700.569706193623,
+  "best_p25": 8039.176868499999,
+  "best_sd": 915.384796871196,
+  "ev_pick": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "ev_mean": 8700.569706193623,
+  "ev_rank": 1,
+  "n_combos": 36,
+  "gap_pct": 0.0,
+  "top5": [
+   {
+    "stats": [
+     "wards",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8700.569706193623
+   },
+   {
+    "stats": [
+     "wards",
+     "stacks",
+     "teamfight"
+    ],
+    "mean": 8261.127212927968
+   },
+   {
+    "stats": [
+     "stacks",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 8059.314282805617
+   },
+   {
+    "stats": [
+     "wards",
+     "runes",
+     "teamfight"
+    ],
+    "mean": 7231.137971707946
+   },
+   {
+    "stats": [
+     "runes",
+     "smokes",
+     "teamfight"
+    ],
+    "mean": 6994.305312965299
+   }
+  ]
+ }
+}

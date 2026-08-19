@@ -1,0 +1,110 @@
+{
+ "model": "team+player gold-margin, HL=60",
+ "half_life": 60.0,
+ "player_half_life": 150.0,
+ "league": null,
+ "n_train_games": 85075,
+ "strength": {
+  "BoomBoys": 2.1017201972134956,
+  "Iron Wing": 2.454577018627735,
+  "Nigma Galaxy": 1.5400608091625767,
+  "Team Falcons": 2.4474843966615247,
+  "Team Liquid": 2.177992618323313,
+  "Team Spirit": 2.285497012026708,
+  "Team Vision": 3.155020441324134,
+  "Team Yandex": 2.5021186759814777
+ },
+ "single_game": {
+  "BoomBoys": {
+   "BoomBoys": 0.5,
+   "Iron Wing": 0.4126898211872278,
+   "Nigma Galaxy": 0.6368364036520245,
+   "Team Falcons": 0.4144099671473011,
+   "Team Liquid": 0.48094113337829936,
+   "Team Spirit": 0.4541846707009193,
+   "Team Vision": 0.25859186711609405,
+   "Team Yandex": 0.4012166048476316
+  },
+  "Iron Wing": {
+   "BoomBoys": 0.5873101788127723,
+   "Iron Wing": 0.5,
+   "Nigma Galaxy": 0.7139234291897268,
+   "Team Falcons": 0.5017731480583321,
+   "Team Liquid": 0.5687086460230285,
+   "Team Spirit": 0.5421695873002838,
+   "Team Vision": 0.3317139226447739,
+   "Team Yandex": 0.4881168237825904
+  },
+  "Nigma Galaxy": {
+   "BoomBoys": 0.3631635963479755,
+   "Iron Wing": 0.2860765708102731,
+   "Nigma Galaxy": 0.5,
+   "Team Falcons": 0.287527340124867,
+   "Team Liquid": 0.3457142062735511,
+   "Team Spirit": 0.3218165414889893,
+   "Team Vision": 0.16590117204284047,
+   "Team Yandex": 0.2764663648933585
+  },
+  "Team Falcons": {
+   "BoomBoys": 0.5855900328526987,
+   "Iron Wing": 0.498226851941668,
+   "Nigma Galaxy": 0.712472659875133,
+   "Team Falcons": 0.5,
+   "Team Liquid": 0.566968133036624,
+   "Team Spirit": 0.5404085250959066,
+   "Team Vision": 0.3301435126612388,
+   "Team Yandex": 0.4863448266167278
+  },
+  "Team Liquid": {
+   "BoomBoys": 0.5190588666217006,
+   "Iron Wing": 0.43129135397697144,
+   "Nigma Galaxy": 0.6542857937264489,
+   "Team Falcons": 0.4330318669633761,
+   "Team Liquid": 0.5,
+   "Team Spirit": 0.4731497560524849,
+   "Team Vision": 0.27348192645694774,
+   "Team Yandex": 0.4196705264133884
+  },
+  "Team Spirit": {
+   "BoomBoys": 0.5458153292990807,
+   "Iron Wing": 0.4578304126997163,
+   "Nigma Galaxy": 0.6781834585110107,
+   "Team Falcons": 0.45959147490409336,
+   "Team Liquid": 0.5268502439475151,
+   "Team Spirit": 0.5,
+   "Team Vision": 0.2953534761271572,
+   "Team Yandex": 0.44605536497241466
+  },
+  "Team Vision": {
+   "BoomBoys": 0.7414081328839061,
+   "Iron Wing": 0.668286077355226,
+   "Nigma Galaxy": 0.8340988279571596,
+   "Team Falcons": 0.6698564873387611,
+   "Team Liquid": 0.7265180735430523,
+   "Team Spirit": 0.7046465238728429,
+   "Team Vision": 0.5,
+   "Team Yandex": 0.6576640706144835
+  },
+  "Team Yandex": {
+   "BoomBoys": 0.5987833951523683,
+   "Iron Wing": 0.5118831762174096,
+   "Nigma Galaxy": 0.7235336351066415,
+   "Team Falcons": 0.5136551733832722,
+   "Team Liquid": 0.5803294735866116,
+   "Team Spirit": 0.5539446350275853,
+   "Team Vision": 0.3423359293855165,
+   "Team Yandex": 0.5
+  }
+ },
+ "bootstrap_teams": [
+  "BoomBoys",
+  "Iron Wing",
+  "Nigma Galaxy",
+  "Team Falcons",
+  "Team Liquid",
+  "Team Spirit",
+  "Team Vision",
+  "Team Yandex"
+ ],
+ "bootstrap_file": "data/playoff_probs_hl60_boot.npy"
+}

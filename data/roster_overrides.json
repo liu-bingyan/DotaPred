@@ -1,0 +1,12 @@
+{
+ "note": "客户端名单与 OpenDota 之后发生的阵容变动，手工维护。teams.json 是 fetch_teams.py 生成的，不要直接改它；这里的改动由 fantasy_stats.apply_roster_overrides 在读进来之后套上。",
+ "LGD Gaming": {
+  "as_of": "2026-08-09",
+  "drop": [
+   {"account_id": 1026694469, "name": "TaiLung", "reason": "竞争诚信问题，被 PGL 禁赛"}
+  ],
+  "add": [
+   {"account_id": 94054712, "name": "Topson", "expect_role": "mid"}
+  ]
+ }
+}

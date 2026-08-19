@@ -1,0 +1,660 @@
+{
+  "Team Liquid": {
+    "team_id": 2163,
+    "od_name": "Team Liquid",
+    "tag": "Liquid",
+    "rating": 1290.13,
+    "last_match_time": 1785441508,
+    "n_matches": 3118,
+    "players": [
+      {
+        "account_id": 152962063,
+        "name": "m1CKe",
+        "games_played": 1694,
+        "wins": 976
+      },
+      {
+        "account_id": 77490514,
+        "name": "Boxi",
+        "games_played": 1660,
+        "wins": 953
+      },
+      {
+        "account_id": 201358612,
+        "name": "Nisha",
+        "games_played": 1085,
+        "wins": 641
+      },
+      {
+        "account_id": 97590558,
+        "name": "Ace ♠",
+        "games_played": 288,
+        "wins": 167
+      },
+      {
+        "account_id": 16497807,
+        "name": "tOfu",
+        "games_played": 288,
+        "wins": 167
+      },
+      {
+        "account_id": 60943014,
+        "name": "Jabbz",
+        "games_played": 7,
+        "wins": 2
+      }
+    ]
+  },
+  "BoomBoys": {
+    "team_id": 8255888,
+    "od_name": "BoomBoys",
+    "tag": "BB",
+    "rating": 1479.83,
+    "last_match_time": 1784483341,
+    "n_matches": 1210,
+    "players": [
+      {
+        "account_id": 317880638,
+        "name": "Save-",
+        "games_played": 956,
+        "wins": 564
+      },
+      {
+        "account_id": 480412663,
+        "name": "gpk~",
+        "games_played": 876,
+        "wins": 513
+      },
+      {
+        "account_id": 165564598,
+        "name": "MieRo",
+        "games_played": 728,
+        "wins": 422
+      },
+      {
+        "account_id": 196878136,
+        "name": "Kataomi`",
+        "games_played": 560,
+        "wins": 338
+      },
+      {
+        "account_id": 172099728,
+        "name": "Kiritych~",
+        "games_played": 313,
+        "wins": 184
+      }
+    ]
+  },
+  "Xtreme Gaming": {
+    "team_id": 8261500,
+    "od_name": "Xtreme Gaming",
+    "tag": "XG",
+    "rating": 1211.48,
+    "last_match_time": 1784040961,
+    "n_matches": 1109,
+    "players": [
+      {
+        "account_id": 898754153,
+        "name": "Ame",
+        "games_played": 639,
+        "wins": 364
+      },
+      {
+        "account_id": 129958758,
+        "name": "Xxs",
+        "games_played": 634,
+        "wins": 361
+      },
+      {
+        "account_id": 94296097,
+        "name": "xNova",
+        "games_played": 281,
+        "wins": 150
+      },
+      {
+        "account_id": 101695162,
+        "name": "fy",
+        "games_played": 233,
+        "wins": 119
+      },
+      {
+        "account_id": 173978074,
+        "name": "NothingToSay",
+        "games_played": 233,
+        "wins": 119
+      }
+    ]
+  },
+  "Team Falcons": {
+    "team_id": 9247354,
+    "od_name": "Team Falcons",
+    "tag": "FLCN",
+    "rating": 1462.93,
+    "last_match_time": 1785434857,
+    "n_matches": 852,
+    "players": [
+      {
+        "account_id": 25907144,
+        "name": "Cr1t-",
+        "games_played": 853,
+        "wins": 552
+      },
+      {
+        "account_id": 100058342,
+        "name": "skiter",
+        "games_played": 848,
+        "wins": 547
+      },
+      {
+        "account_id": 10366616,
+        "name": "Sneyking",
+        "games_played": 848,
+        "wins": 547
+      },
+      {
+        "account_id": 183719386,
+        "name": "AMMAR_THE_F",
+        "games_played": 841,
+        "wins": 547
+      },
+      {
+        "account_id": 898455820,
+        "name": "Malr1ne",
+        "games_played": 784,
+        "wins": 518
+      }
+    ]
+  },
+  "Aurora Gaming": {
+    "team_id": 9467224,
+    "od_name": "Aurora Gaming",
+    "tag": "Aurora",
+    "rating": 1360.12,
+    "last_match_time": 1784118474,
+    "n_matches": 638,
+    "players": [
+      {
+        "account_id": 256156323,
+        "name": "Mira",
+        "games_played": 514,
+        "wins": 307
+      },
+      {
+        "account_id": 124801257,
+        "name": "Nightfall",
+        "games_played": 490,
+        "wins": 294
+      },
+      {
+        "account_id": 320219866,
+        "name": "kaori",
+        "games_played": 277,
+        "wins": 178
+      },
+      {
+        "account_id": 126842529,
+        "name": "Ws`",
+        "games_played": 248,
+        "wins": 164
+      },
+      {
+        "account_id": 301750126,
+        "name": "Mikoto",
+        "games_played": 224,
+        "wins": 127
+      },
+      {
+        "account_id": 389022189,
+        "name": "Palos",
+        "games_played": 30,
+        "wins": 16
+      }
+    ]
+  },
+  "Team Yandex": {
+    "team_id": 9823272,
+    "od_name": "Team Yandex",
+    "tag": "TY",
+    "rating": 1527.97,
+    "last_match_time": 1784459701,
+    "n_matches": 295,
+    "players": [
+      {
+        "account_id": 312436974,
+        "name": "CHIRA_JUNIOR",
+        "games_played": 295,
+        "wins": 176
+      },
+      {
+        "account_id": 93817671,
+        "name": "Maladych",
+        "games_played": 257,
+        "wins": 161
+      },
+      {
+        "account_id": 171262902,
+        "name": "医者watson`",
+        "games_played": 257,
+        "wins": 161
+      },
+      {
+        "account_id": 103735745,
+        "name": "Saksa",
+        "games_played": 228,
+        "wins": 144
+      },
+      {
+        "account_id": 56351509,
+        "name": "DM",
+        "games_played": 71,
+        "wins": 48
+      }
+    ]
+  },
+  "Iron Wing": {
+    "team_id": 10150413,
+    "od_name": "Iron Wing",
+    "tag": "IW",
+    "rating": 1121.72,
+    "last_match_time": 1780151101,
+    "n_matches": 24,
+    "players": [
+      {
+        "account_id": 93618577,
+        "name": "bzm",
+        "games_played": 24,
+        "wins": 8
+      },
+      {
+        "account_id": 86698277,
+        "name": "33",
+        "games_played": 24,
+        "wins": 8
+      },
+      {
+        "account_id": 331855530,
+        "name": "Pure",
+        "games_played": 24,
+        "wins": 8
+      },
+      {
+        "account_id": 136829091,
+        "name": "Whitemon",
+        "games_played": 24,
+        "wins": 8
+      },
+      {
+        "account_id": 346412363,
+        "name": "Ari",
+        "games_played": 24,
+        "wins": 8
+      }
+    ]
+  },
+  "Vici Gaming": {
+    "team_id": 726228,
+    "od_name": "Vici Gaming",
+    "tag": "VG",
+    "rating": 1315.93,
+    "last_match_time": 1785434857,
+    "n_matches": 2613,
+    "players": [
+      {
+        "account_id": 137129583,
+        "name": "Xm",
+        "games_played": 277,
+        "wins": 144
+      },
+      {
+        "account_id": 320252024,
+        "name": "shiro",
+        "games_played": 140,
+        "wins": 76
+      },
+      {
+        "account_id": 111114687,
+        "name": "y`",
+        "games_played": 140,
+        "wins": 76
+      },
+      {
+        "account_id": 118134220,
+        "name": "Bach",
+        "games_played": 132,
+        "wins": 71
+      },
+      {
+        "account_id": 157475523,
+        "name": "XinQ",
+        "games_played": 92,
+        "wins": 51
+      }
+    ]
+  },
+  "Team Resilience": {
+    "team_id": 5017210,
+    "od_name": "Team Resilience",
+    "tag": "Resilience",
+    "rating": 1207.63,
+    "last_match_time": 1781767220,
+    "n_matches": 77,
+    "players": [
+      {
+        "account_id": 150961567,
+        "name": "planet",
+        "games_played": 29,
+        "wins": 21
+      },
+      {
+        "account_id": 145957968,
+        "name": "niu",
+        "games_played": 29,
+        "wins": 21
+      },
+      {
+        "account_id": 315272623,
+        "name": "Echozz",
+        "games_played": 29,
+        "wins": 21
+      },
+      {
+        "account_id": 249835593,
+        "name": "zzq",
+        "games_played": 29,
+        "wins": 21
+      },
+      {
+        "account_id": 170896543,
+        "name": "YSR-04E",
+        "games_played": 29,
+        "wins": 21
+      }
+    ]
+  },
+  "LGD Gaming": {
+    "team_id": 10150538,
+    "od_name": "LGD Gaming",
+    "tag": "LGD",
+    "rating": 1346.37,
+    "last_match_time": 1785416889,
+    "n_matches": 58,
+    "players": [
+      {
+        "account_id": 292921272,
+        "name": "Wisper",
+        "games_played": 58,
+        "wins": 38
+      },
+      {
+        "account_id": 1026694469,
+        "name": "TaiLung",
+        "games_played": 58,
+        "wins": 38
+      },
+      {
+        "account_id": 177203952,
+        "name": "Yuma",
+        "games_played": 58,
+        "wins": 38
+      },
+      {
+        "account_id": 105045291,
+        "name": "Thiolicor",
+        "games_played": 58,
+        "wins": 38
+      },
+      {
+        "account_id": 81306398,
+        "name": "KingJungles",
+        "games_played": 58,
+        "wins": 38
+      }
+    ]
+  },
+  "OG": {
+    "team_id": 2586976,
+    "od_name": "OG",
+    "tag": "OG",
+    "rating": 1242.54,
+    "last_match_time": 1783863780,
+    "n_matches": 2187,
+    "players": [
+      {
+        "account_id": 88271237,
+        "name": "Ceb",
+        "games_played": 931,
+        "wins": 515
+      },
+      {
+        "account_id": 355168766,
+        "name": "Natsumi",
+        "games_played": 149,
+        "wins": 71
+      },
+      {
+        "account_id": 100594231,
+        "name": "skem",
+        "games_played": 149,
+        "wins": 71
+      },
+      {
+        "account_id": 324277900,
+        "name": "Yopaj-",
+        "games_played": 149,
+        "wins": 71
+      },
+      {
+        "account_id": 155494381,
+        "name": "TIMS",
+        "games_played": 149,
+        "wins": 71
+      },
+      {
+        "account_id": 132309493,
+        "name": "Raven",
+        "games_played": 21,
+        "wins": 13
+      }
+    ]
+  },
+  "GamerLegion": {
+    "team_id": 9964962,
+    "od_name": "GamerLegion",
+    "tag": "GL",
+    "rating": 1254.26,
+    "last_match_time": 1783766400,
+    "n_matches": 177,
+    "players": [
+      {
+        "account_id": 160119017,
+        "name": "Fayde",
+        "games_played": 177,
+        "wins": 90
+      },
+      {
+        "account_id": 90423751,
+        "name": "Bignum",
+        "games_played": 177,
+        "wins": 90
+      },
+      {
+        "account_id": 191362875,
+        "name": "Speeed",
+        "games_played": 177,
+        "wins": 90
+      },
+      {
+        "account_id": 154974246,
+        "name": "RCY",
+        "games_played": 177,
+        "wins": 90
+      },
+      {
+        "account_id": 206642367,
+        "name": "Ghost",
+        "games_played": 76,
+        "wins": 42
+      }
+    ]
+  },
+  "Nigma Galaxy": {
+    "team_id": 10136357,
+    "od_name": "Nigma Galaxy ",
+    "tag": "NGX",
+    "rating": 1260.5,
+    "last_match_time": 1785426177,
+    "n_matches": 54,
+    "players": [
+      {
+        "account_id": 138880576,
+        "name": "Davai",
+        "games_played": 54,
+        "wins": 32
+      },
+      {
+        "account_id": 152168157,
+        "name": "OmaR",
+        "games_played": 54,
+        "wins": 32
+      },
+      {
+        "account_id": 101356886,
+        "name": "GH",
+        "games_played": 54,
+        "wins": 32
+      },
+      {
+        "account_id": 111620041,
+        "name": "SumaiL-",
+        "games_played": 26,
+        "wins": 16
+      },
+      {
+        "account_id": 210053851,
+        "name": "lorenof",
+        "games_played": 26,
+        "wins": 16
+      }
+    ]
+  },
+  "Huligani": {
+    "team_id": 10149530,
+    "od_name": "HULIGANI",
+    "tag": "HU",
+    "rating": 1183.59,
+    "last_match_time": 1782653592,
+    "n_matches": 21,
+    "players": [
+      {
+        "account_id": 145065875,
+        "name": "sayuw",
+        "games_played": 21,
+        "wins": 13
+      },
+      {
+        "account_id": 140251702,
+        "name": "Mirage`雨",
+        "games_played": 21,
+        "wins": 13
+      },
+      {
+        "account_id": 320017600,
+        "name": "ssnovv1",
+        "games_played": 21,
+        "wins": 13
+      },
+      {
+        "account_id": 123787715,
+        "name": "RESPECT",
+        "games_played": 21,
+        "wins": 13
+      },
+      {
+        "account_id": 92487440,
+        "name": "Corrupted",
+        "games_played": 21,
+        "wins": 13
+      }
+    ]
+  },
+  "Team Vision": {
+    "team_id": 9572001,
+    "od_name": "TEAM VISION",
+    "tag": "VSN",
+    "rating": 1553.33,
+    "last_match_time": 1782408313,
+    "n_matches": 501,
+    "players": [
+      {
+        "account_id": 164199202,
+        "name": "9Class",
+        "games_played": 501,
+        "wins": 329
+      },
+      {
+        "account_id": 106573901,
+        "name": "No[o]ne-",
+        "games_played": 501,
+        "wins": 329
+      },
+      {
+        "account_id": 73401082,
+        "name": "Dukalis",
+        "games_played": 490,
+        "wins": 323
+      },
+      {
+        "account_id": 1044002267,
+        "name": "Satanic",
+        "games_played": 413,
+        "wins": 274
+      },
+      {
+        "account_id": 195108598,
+        "name": "Noticed",
+        "games_played": 50,
+        "wins": 37
+      }
+    ]
+  },
+  "Team Spirit": {
+    "team_id": 7119388,
+    "od_name": "Team Spirit",
+    "tag": "TSpirit",
+    "rating": 1410.8,
+    "last_match_time": 1784204826,
+    "n_matches": 1551,
+    "players": [
+      {
+        "account_id": 321580662,
+        "name": "Yatoro",
+        "games_played": 1280,
+        "wins": 801
+      },
+      {
+        "account_id": 302214028,
+        "name": "Collapse",
+        "games_played": 1257,
+        "wins": 792
+      },
+      {
+        "account_id": 106305042,
+        "name": "Larl",
+        "games_played": 977,
+        "wins": 602
+      },
+      {
+        "account_id": 847565596,
+        "name": "rue",
+        "games_played": 541,
+        "wins": 330
+      },
+      {
+        "account_id": 218231587,
+        "name": "not_me",
+        "games_played": 63,
+        "wins": 41
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "Team Liquid": {
+    "team_id": 2163,
+    "rating": 1.1473110944151546,
+    "eff_games": 130.1124216149036
+  },
+  "BoomBoys": {
+    "team_id": 8255888,
+    "rating": 1.24879082587121,
+    "eff_games": 131.86689828515438
+  },
+  "Xtreme Gaming": {
+    "team_id": 8261500,
+    "rating": 0.8467076734384394,
+    "eff_games": 113.93826511465318
+  },
+  "Team Falcons": {
+    "team_id": 9247354,
+    "rating": 1.3186056076306805,
+    "eff_games": 114.98228478665605
+  },
+  "Aurora Gaming": {
+    "team_id": 9467224,
+    "rating": 1.2616110294197578,
+    "eff_games": 141.0351835998939
+  },
+  "Team Yandex": {
+    "team_id": 9823272,
+    "rating": 1.424119345771599,
+    "eff_games": 94.91718016351113
+  },
+  "Iron Wing": {
+    "team_id": 10150413,
+    "rating": 1.315619605867875,
+    "eff_games": 121.29198753517807
+  },
+  "Vici Gaming": {
+    "team_id": 726228,
+    "rating": 0.6827096317852598,
+    "eff_games": 70.18109959054941
+  },
+  "Team Resilience": {
+    "team_id": 5017210,
+    "rating": 0.5223412983421277,
+    "eff_games": 13.527918805641002
+  },
+  "LGD Gaming": {
+    "team_id": 10150538,
+    "rating": 0.9756180639121579,
+    "eff_games": 115.50807897635443
+  },
+  "OG": {
+    "team_id": 2586976,
+    "rating": 0.523645838163298,
+    "eff_games": 95.28986829950058
+  },
+  "GamerLegion": {
+    "team_id": 9964962,
+    "rating": 0.5967231764937931,
+    "eff_games": 84.56503127373341
+  },
+  "Nigma Galaxy": {
+    "team_id": 10136357,
+    "rating": 0.7265873603332611,
+    "eff_games": 102.26000075595702
+  },
+  "Huligani": {
+    "team_id": 10149530,
+    "rating": 0.3842947216586928,
+    "eff_games": 92.3116916226878
+  },
+  "Team Vision": {
+    "team_id": 9572001,
+    "rating": 1.5955579648592317,
+    "eff_games": 120.15436148605032
+  },
+  "Team Spirit": {
+    "team_id": 7119388,
+    "rating": 1.2768541881472637,
+    "eff_games": 115.03649425344929
+  }
+}

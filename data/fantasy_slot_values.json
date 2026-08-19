@@ -1,0 +1,578 @@
+{
+ "Team Liquid|core": {
+  "actual banner": [
+   14362.098189298398,
+   8455.730118000001,
+   4171.797179600986,
+   [
+    "gpm",
+    "cs",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Liquid|mid": {
+  "actual banner": [
+   17625.9772185792,
+   10453.934034,
+   4999.199593719743,
+   [
+    "deaths",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Liquid|support": {
+  "actual banner": [
+   13477.173912590402,
+   7816.8619548,
+   3958.611831980241,
+   [
+    "wards",
+    "stacks",
+    "teamfight"
+   ]
+  ]
+ },
+ "BoomBoys|core": {
+  "actual banner": [
+   15127.03968893376,
+   8849.6542452,
+   3881.439598624683,
+   [
+    "deaths",
+    "gpm",
+    "teamfight"
+   ]
+  ]
+ },
+ "BoomBoys|mid": {
+  "actual banner": [
+   17892.772924084802,
+   10407.007608,
+   4617.331933979351,
+   [
+    "deaths",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "BoomBoys|support": {
+  "actual banner": [
+   14151.7224861704,
+   8141.0370788,
+   3680.6323051592926,
+   [
+    "wards",
+    "smokes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Xtreme Gaming|core": {
+  "actual banner": [
+   12472.722642828,
+   8829.0231996,
+   4284.719365571609,
+   [
+    "cs",
+    "gpm",
+    "teamfight"
+   ]
+  ]
+ },
+ "Xtreme Gaming|mid": {
+  "actual banner": [
+   13090.016863094399,
+   9498.9601944,
+   4515.326869075539,
+   [
+    "deaths",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Xtreme Gaming|support": {
+  "actual banner": [
+   11027.4864526328,
+   7801.0215702000005,
+   3849.624509084978,
+   [
+    "wards",
+    "smokes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Falcons|core": {
+  "actual banner": [
+   15912.103966976798,
+   9165.926685999999,
+   3741.083669048638,
+   [
+    "gpm",
+    "cs",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Falcons|mid": {
+  "actual banner": [
+   17129.292232873602,
+   9767.878444,
+   4015.259809955608,
+   [
+    "gpm",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Falcons|support": {
+  "actual banner": [
+   14034.3534112104,
+   8019.6396444,
+   3224.442775795275,
+   [
+    "wards",
+    "stacks",
+    "teamfight"
+   ]
+  ]
+ },
+ "Aurora Gaming|core": {
+  "actual banner": [
+   15893.552614031201,
+   9030.762568,
+   3714.540482086204,
+   [
+    "gpm",
+    "deaths",
+    "teamfight"
+   ]
+  ]
+ },
+ "Aurora Gaming|mid": {
+  "actual banner": [
+   18035.594383430405,
+   10296.7476432,
+   4413.954728389015,
+   [
+    "deaths",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Aurora Gaming|support": {
+  "actual banner": [
+   13712.030314056,
+   7780.6606656,
+   3286.4017996294037,
+   [
+    "wards",
+    "smokes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Yandex|core": {
+  "actual banner": [
+   16942.0457520296,
+   9561.9135,
+   3281.3995643731596,
+   [
+    "gpm",
+    "deaths",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Yandex|mid": {
+  "actual banner": [
+   17777.630034830396,
+   10351.6997424,
+   3428.1328864442526,
+   [
+    "deaths",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Yandex|support": {
+  "actual banner": [
+   15115.8752320464,
+   8858.7767934,
+   2915.0014027613315,
+   [
+    "wards",
+    "stacks",
+    "teamfight"
+   ]
+  ]
+ },
+ "Iron Wing|core": {
+  "actual banner": [
+   16307.1262810328,
+   9161.7622804,
+   3785.7520106911893,
+   [
+    "gpm",
+    "cs",
+    "teamfight"
+   ]
+  ]
+ },
+ "Iron Wing|mid": {
+  "actual banner": [
+   17641.821677012802,
+   10085.053355600001,
+   4070.6349083140203,
+   [
+    "gpm",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Iron Wing|support": {
+  "actual banner": [
+   14075.020277971202,
+   8091.6909012,
+   3231.842868320489,
+   [
+    "wards",
+    "stacks",
+    "teamfight"
+   ]
+  ]
+ },
+ "Vici Gaming|core": {
+  "actual banner": [
+   11866.497662052801,
+   8850.0244642,
+   4015.4600466382285,
+   [
+    "cs",
+    "gpm",
+    "teamfight"
+   ]
+  ]
+ },
+ "Vici Gaming|mid": {
+  "actual banner": [
+   13361.405434728,
+   9647.9520648,
+   4540.573693819709,
+   [
+    "cs",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Vici Gaming|support": {
+  "actual banner": [
+   11334.2541600328,
+   8118.8299896,
+   3885.3645347769425,
+   [
+    "wards",
+    "smokes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Resilience|core": {
+  "actual banner": [
+   9459.533270478401,
+   8302.558894400001,
+   2120.3171040455945,
+   [
+    "deaths",
+    "gpm",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Resilience|mid": {
+  "actual banner": [
+   10978.14829176,
+   9321.5255184,
+   2598.7909951240895,
+   [
+    "deaths",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Resilience|support": {
+  "actual banner": [
+   8963.758128054402,
+   7371.6324402,
+   2152.432706709284,
+   [
+    "stacks",
+    "smokes",
+    "teamfight"
+   ]
+  ]
+ },
+ "LGD Gaming|core": {
+  "actual banner": [
+   14153.633580273598,
+   8975.0717532,
+   4747.968876975435,
+   [
+    "gpm",
+    "cs",
+    "teamfight"
+   ]
+  ]
+ },
+ "LGD Gaming|mid": {
+  "actual banner": [
+   14452.8477541984,
+   9129.6643204,
+   4840.292504257723,
+   [
+    "gpm",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "LGD Gaming|support": {
+  "actual banner": [
+   14473.462108482718,
+   8998.6192776,
+   4873.755890880653,
+   [
+    "wards",
+    "stacks",
+    "teamfight"
+   ]
+  ]
+ },
+ "OG|core": {
+  "actual banner": [
+   8898.317068864799,
+   7543.4450156,
+   2349.2899438964464,
+   [
+    "deaths",
+    "gpm",
+    "teamfight"
+   ]
+  ]
+ },
+ "OG|mid": {
+  "actual banner": [
+   10948.5592653264,
+   9049.6702212,
+   2877.6148974390685,
+   [
+    "deaths",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "OG|support": {
+  "actual banner": [
+   10740.6944322912,
+   8473.040456399998,
+   3083.208390815246,
+   [
+    "stacks",
+    "wards",
+    "teamfight"
+   ]
+  ]
+ },
+ "GamerLegion|core": {
+  "actual banner": [
+   10015.0769472176,
+   8029.7599708,
+   3110.9234498338456,
+   [
+    "gpm",
+    "deaths",
+    "teamfight"
+   ]
+  ]
+ },
+ "GamerLegion|mid": {
+  "actual banner": [
+   11496.2406841824,
+   8967.864768,
+   3594.1614902007673,
+   [
+    "deaths",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "GamerLegion|support": {
+  "actual banner": [
+   8976.950850806401,
+   7034.982848,
+   2834.7221579907423,
+   [
+    "smokes",
+    "wards",
+    "teamfight"
+   ]
+  ]
+ },
+ "Nigma Galaxy|core": {
+  "actual banner": [
+   11138.2246265848,
+   8106.0691736,
+   3835.957604792667,
+   [
+    "gpm",
+    "deaths",
+    "teamfight"
+   ]
+  ]
+ },
+ "Nigma Galaxy|mid": {
+  "actual banner": [
+   13740.389575488001,
+   9881.974332,
+   4724.799032385609,
+   [
+    "deaths",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Nigma Galaxy|support": {
+  "actual banner": [
+   10385.0910499472,
+   7396.6291428,
+   3600.475140003946,
+   [
+    "wards",
+    "smokes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Huligani|core": {
+  "actual banner": [
+   9917.47537904,
+   8539.958107800001,
+   2048.501909535491,
+   [
+    "gpm",
+    "cs",
+    "teamfight"
+   ]
+  ]
+ },
+ "Huligani|mid": {
+  "actual banner": [
+   10837.3863117984,
+   9351.660204,
+   2242.767894980708,
+   [
+    "gpm",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Huligani|support": {
+  "actual banner": [
+   8302.8201711024,
+   7046.4652014,
+   1735.7181122034867,
+   [
+    "wards",
+    "smokes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Vision|core": {
+  "actual banner": [
+   17630.9447963624,
+   16566.265484199997,
+   2285.743887947485,
+   [
+    "gpm",
+    "deaths",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Vision|mid": {
+  "actual banner": [
+   19158.59917908,
+   17523.9614832,
+   2531.368903125325,
+   [
+    "deaths",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Vision|support": {
+  "actual banner": [
+   15276.5194447952,
+   13837.0662272,
+   2116.834148251878,
+   [
+    "wards",
+    "smokes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Spirit|core": {
+  "actual banner": [
+   16467.862798191203,
+   9354.702308599999,
+   3493.489525598129,
+   [
+    "gpm",
+    "cs",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Spirit|mid": {
+  "actual banner": [
+   17732.2015608064,
+   10134.4107172,
+   3801.033001226083,
+   [
+    "gpm",
+    "runes",
+    "teamfight"
+   ]
+  ]
+ },
+ "Team Spirit|support": {
+  "actual banner": [
+   15293.534773298401,
+   8831.0438964,
+   3501.1322827159597,
+   [
+    "wards",
+    "stacks",
+    "teamfight"
+   ]
+  ]
+ }
+}

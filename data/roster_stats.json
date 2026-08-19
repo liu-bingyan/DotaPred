@@ -1,0 +1,244 @@
+{
+ "stats": {
+  "Aurora Gaming|core": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "Aurora Gaming|mid": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "Aurora Gaming|support": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "BoomBoys|core": [
+   "deaths",
+   "gpm",
+   "teamfight"
+  ],
+  "BoomBoys|mid": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "BoomBoys|support": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "GamerLegion|core": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "GamerLegion|mid": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "GamerLegion|support": [
+   "smokes",
+   "wards",
+   "teamfight"
+  ],
+  "Huligani|core": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "Huligani|mid": [
+   "gpm",
+   "runes",
+   "teamfight"
+  ],
+  "Huligani|support": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "Iron Wing|core": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "Iron Wing|mid": [
+   "gpm",
+   "runes",
+   "teamfight"
+  ],
+  "Iron Wing|support": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "LGD Gaming|core": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "LGD Gaming|mid": [
+   "gpm",
+   "runes",
+   "teamfight"
+  ],
+  "LGD Gaming|support": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "Nigma Galaxy|core": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "Nigma Galaxy|mid": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "Nigma Galaxy|support": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "OG|core": [
+   "deaths",
+   "gpm",
+   "teamfight"
+  ],
+  "OG|mid": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "OG|support": [
+   "stacks",
+   "wards",
+   "teamfight"
+  ],
+  "Team Falcons|core": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "Team Falcons|mid": [
+   "gpm",
+   "runes",
+   "teamfight"
+  ],
+  "Team Falcons|support": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "Team Liquid|core": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "Team Liquid|mid": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "Team Liquid|support": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "Team Resilience|core": [
+   "deaths",
+   "gpm",
+   "teamfight"
+  ],
+  "Team Resilience|mid": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "Team Resilience|support": [
+   "stacks",
+   "smokes",
+   "teamfight"
+  ],
+  "Team Spirit|core": [
+   "gpm",
+   "cs",
+   "teamfight"
+  ],
+  "Team Spirit|mid": [
+   "gpm",
+   "runes",
+   "teamfight"
+  ],
+  "Team Spirit|support": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "Team Vision|core": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "Team Vision|mid": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "Team Vision|support": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "Team Yandex|core": [
+   "gpm",
+   "deaths",
+   "teamfight"
+  ],
+  "Team Yandex|mid": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "Team Yandex|support": [
+   "wards",
+   "stacks",
+   "teamfight"
+  ],
+  "Vici Gaming|core": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "Vici Gaming|mid": [
+   "cs",
+   "runes",
+   "teamfight"
+  ],
+  "Vici Gaming|support": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ],
+  "Xtreme Gaming|core": [
+   "cs",
+   "gpm",
+   "teamfight"
+  ],
+  "Xtreme Gaming|mid": [
+   "deaths",
+   "runes",
+   "teamfight"
+  ],
+  "Xtreme Gaming|support": [
+   "wards",
+   "smokes",
+   "teamfight"
+  ]
+ }
+}

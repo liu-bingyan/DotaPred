@@ -1,0 +1,21 @@
+{
+ "pool_size": 500,
+ "best": {
+  "UB-A": "Iron Wing",
+  "UB-B": "Team Vision",
+  "UB-C": "Team Yandex",
+  "UB-D": "Team Falcons",
+  "UB-E": "Team Vision",
+  "UB-F": "Team Falcons",
+  "LB1-1": "BoomBoys",
+  "LB1-2": "Team Liquid",
+  "UB-G": "Team Vision",
+  "LB2-1": "Team Yandex",
+  "LB2-2": "Iron Wing",
+  "LB3": "Iron Wing",
+  "LB-F": "Team Falcons",
+  "GF": "Team Vision"
+ },
+ "best_score": 3206.4369500314606,
+ "submitted_score": 3206.4369500314606
+}

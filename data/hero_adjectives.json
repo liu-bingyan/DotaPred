@@ -1,0 +1,1866 @@
+{
+ "heroes": {
+  "1": {
+   "name": "antimage",
+   "en": "Anti-Mage",
+   "zh": "敌法师",
+   "tags": [
+    "NicePecs",
+    "Parent",
+    "Purple"
+   ],
+   "prefix": [
+    "purple"
+   ]
+  },
+  "2": {
+   "name": "axe",
+   "en": "Axe",
+   "zh": "斧王",
+   "tags": [
+    "Bearded",
+    "NicePecs",
+    "Red"
+   ],
+   "prefix": [
+    "hairy",
+    "red"
+   ]
+  },
+  "3": {
+   "name": "bane",
+   "en": "Bane",
+   "zh": "祸乱之源",
+   "tags": [
+    "BadTeeth",
+    "Flying",
+    "Purple"
+   ],
+   "prefix": [
+    "purple"
+   ]
+  },
+  "4": {
+   "name": "bloodseeker",
+   "en": "Bloodseeker",
+   "zh": "血魔",
+   "tags": [
+    "BadTeeth",
+    "Cape",
+    "Mask",
+    "Red"
+   ],
+   "prefix": [
+    "heroic",
+    "red"
+   ]
+  },
+  "5": {
+   "name": "crystal_maiden",
+   "en": "Crystal Maiden",
+   "zh": "水晶室女",
+   "tags": [
+    "Blue",
+    "Cape",
+    "Cute",
+    "Female",
+    "Icy"
+   ],
+   "prefix": [
+    "blue",
+    "elemental",
+    "heroic"
+   ]
+  },
+  "6": {
+   "name": "drow_ranger",
+   "en": "Drow Ranger",
+   "zh": "卓尔游侠",
+   "tags": [
+    "Cape",
+    "Female",
+    "Icy",
+    "Purple"
+   ],
+   "prefix": [
+    "elemental",
+    "heroic",
+    "purple"
+   ]
+  },
+  "7": {
+   "name": "earthshaker",
+   "en": "Earthshaker",
+   "zh": "撼地者",
+   "tags": [
+    "Brown",
+    "Fuzzy"
+   ],
+   "prefix": [
+    "golden",
+    "hairy"
+   ]
+  },
+  "8": {
+   "name": "juggernaut",
+   "en": "Juggernaut",
+   "zh": "主宰",
+   "tags": [
+    "BadTeeth",
+    "Bearded",
+    "Mask",
+    "NicePecs"
+   ],
+   "prefix": [
+    "hairy",
+    "heroic"
+   ]
+  },
+  "9": {
+   "name": "mirana",
+   "en": "Mirana",
+   "zh": "米拉娜",
+   "tags": [
+    "Blue",
+    "Female",
+    "Steed"
+   ],
+   "prefix": [
+    "blue"
+   ]
+  },
+  "11": {
+   "name": "nevermore",
+   "en": "Shadow Fiend",
+   "zh": "影魔",
+   "tags": [
+    "Demon",
+    "Flying",
+    "Red"
+   ],
+   "prefix": [
+    "otherworldly",
+    "red"
+   ]
+  },
+  "10": {
+   "name": "morphling",
+   "en": "Morphling",
+   "zh": "变体精灵",
+   "tags": [
+    "Aquatic",
+    "Blue"
+   ],
+   "prefix": [
+    "blue",
+    "elemental"
+   ]
+  },
+  "12": {
+   "name": "phantom_lancer",
+   "en": "Phantom Lancer",
+   "zh": "幻影长矛手",
+   "tags": [
+    "Bearded",
+    "Blue"
+   ],
+   "prefix": [
+    "blue",
+    "hairy"
+   ]
+  },
+  "13": {
+   "name": "puck",
+   "en": "Puck",
+   "zh": "帕克",
+   "tags": [
+    "Blue",
+    "Cute",
+    "Flying",
+    "Wings"
+   ],
+   "prefix": [
+    "blue",
+    "horned"
+   ]
+  },
+  "14": {
+   "name": "pudge",
+   "en": "Pudge",
+   "zh": "帕吉",
+   "tags": [
+    "BadTeeth",
+    "NicePecs",
+    "Potbelly",
+    "Red",
+    "Undead"
+   ],
+   "prefix": [
+    "otherworldly",
+    "red"
+   ]
+  },
+  "15": {
+   "name": "razor",
+   "en": "Razor",
+   "zh": "雷泽",
+   "tags": [
+    "Blue",
+    "Flying"
+   ],
+   "prefix": [
+    "blue"
+   ]
+  },
+  "16": {
+   "name": "sand_king",
+   "en": "Sand King",
+   "zh": "沙王",
+   "tags": [
+    "Brown"
+   ],
+   "prefix": [
+    "golden"
+   ]
+  },
+  "17": {
+   "name": "storm_spirit",
+   "en": "Storm Spirit",
+   "zh": "风暴之灵",
+   "tags": [
+    "Bearded",
+    "Blue",
+    "Spirit"
+   ],
+   "prefix": [
+    "blue",
+    "hairy",
+    "otherworldly"
+   ]
+  },
+  "18": {
+   "name": "sven",
+   "en": "Sven",
+   "zh": "斯温",
+   "tags": [
+    "Blue",
+    "Mask",
+    "NicePecs",
+    "Red"
+   ],
+   "prefix": [
+    "blue",
+    "heroic",
+    "red"
+   ]
+  },
+  "19": {
+   "name": "tiny",
+   "en": "Tiny",
+   "zh": "小小",
+   "tags": [
+    "Brown"
+   ],
+   "prefix": [
+    "golden"
+   ]
+  },
+  "20": {
+   "name": "vengefulspirit",
+   "en": "Vengeful Spirit",
+   "zh": "复仇之魂",
+   "tags": [
+    "Blue",
+    "Female",
+    "Spirit",
+    "Undead"
+   ],
+   "prefix": [
+    "blue",
+    "otherworldly"
+   ]
+  },
+  "21": {
+   "name": "windrunner",
+   "en": "Windranger",
+   "zh": "风行者",
+   "tags": [
+    "Cape",
+    "Cute",
+    "Female",
+    "Green"
+   ],
+   "prefix": [
+    "green",
+    "heroic"
+   ]
+  },
+  "22": {
+   "name": "zuus",
+   "en": "Zeus",
+   "zh": "宙斯",
+   "tags": [
+    "Bearded",
+    "Blue",
+    "NicePecs",
+    "Parent"
+   ],
+   "prefix": [
+    "blue",
+    "hairy"
+   ]
+  },
+  "23": {
+   "name": "kunkka",
+   "en": "Kunkka",
+   "zh": "昆卡",
+   "tags": [
+    "Aquatic",
+    "Bearded",
+    "Undead"
+   ],
+   "prefix": [
+    "elemental",
+    "hairy",
+    "otherworldly"
+   ]
+  },
+  "25": {
+   "name": "lina",
+   "en": "Lina",
+   "zh": "莉娜",
+   "tags": [
+    "Female",
+    "Fiery",
+    "Flying",
+    "Red"
+   ],
+   "prefix": [
+    "elemental",
+    "red"
+   ]
+  },
+  "31": {
+   "name": "lich",
+   "en": "Lich",
+   "zh": "巫妖",
+   "tags": [
+    "Blue",
+    "Flying",
+    "Icy",
+    "Undead"
+   ],
+   "prefix": [
+    "blue",
+    "elemental",
+    "otherworldly"
+   ]
+  },
+  "26": {
+   "name": "lion",
+   "en": "Lion",
+   "zh": "莱恩",
+   "tags": [
+    "Cape",
+    "Demon",
+    "Purple"
+   ],
+   "prefix": [
+    "heroic",
+    "otherworldly",
+    "purple"
+   ]
+  },
+  "27": {
+   "name": "shadow_shaman",
+   "en": "Shadow Shaman",
+   "zh": "暗影萨满",
+   "tags": [
+    "BadTeeth",
+    "Mask",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden",
+    "heroic"
+   ]
+  },
+  "28": {
+   "name": "slardar",
+   "en": "Slardar",
+   "zh": "斯拉达",
+   "tags": [
+    "Aquatic",
+    "Purple"
+   ],
+   "prefix": [
+    "elemental",
+    "purple"
+   ]
+  },
+  "29": {
+   "name": "tidehunter",
+   "en": "Tidehunter",
+   "zh": "潮汐猎人",
+   "tags": [
+    "Aquatic",
+    "BadTeeth",
+    "Green",
+    "Potbelly"
+   ],
+   "prefix": [
+    "elemental",
+    "green"
+   ]
+  },
+  "30": {
+   "name": "witch_doctor",
+   "en": "Witch Doctor",
+   "zh": "巫医",
+   "tags": [
+    "BadTeeth",
+    "Potbelly",
+    "Purple"
+   ],
+   "prefix": [
+    "purple"
+   ]
+  },
+  "32": {
+   "name": "riki",
+   "en": "Riki",
+   "zh": "力丸",
+   "tags": [
+    "Bearded",
+    "Horns",
+    "Purple"
+   ],
+   "prefix": [
+    "hairy",
+    "horned",
+    "purple"
+   ]
+  },
+  "33": {
+   "name": "enigma",
+   "en": "Enigma",
+   "zh": "谜团",
+   "tags": [
+    "Flying",
+    "NicePecs",
+    "Purple"
+   ],
+   "prefix": [
+    "purple"
+   ]
+  },
+  "34": {
+   "name": "tinker",
+   "en": "Tinker",
+   "zh": "修补匠",
+   "tags": [
+    "Bearded",
+    "Brown",
+    "Mask",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden",
+    "hairy",
+    "heroic"
+   ]
+  },
+  "35": {
+   "name": "sniper",
+   "en": "Sniper",
+   "zh": "狙击手",
+   "tags": [
+    "Bearded",
+    "Cape",
+    "Red"
+   ],
+   "prefix": [
+    "hairy",
+    "heroic",
+    "red"
+   ]
+  },
+  "36": {
+   "name": "necrolyte",
+   "en": "Necrophos",
+   "zh": "瘟疫法师",
+   "tags": [
+    "Bearded",
+    "Green",
+    "Undead"
+   ],
+   "prefix": [
+    "green",
+    "hairy",
+    "otherworldly"
+   ]
+  },
+  "37": {
+   "name": "warlock",
+   "en": "Warlock",
+   "zh": "术士",
+   "tags": [
+    "Bearded",
+    "Cape",
+    "Red"
+   ],
+   "prefix": [
+    "hairy",
+    "heroic",
+    "red"
+   ]
+  },
+  "38": {
+   "name": "beastmaster",
+   "en": "Beastmaster",
+   "zh": "兽王",
+   "tags": [
+    "Bearded",
+    "Horns",
+    "NicePecs",
+    "Red"
+   ],
+   "prefix": [
+    "hairy",
+    "horned",
+    "red"
+   ]
+  },
+  "39": {
+   "name": "queenofpain",
+   "en": "Queen of Pain",
+   "zh": "痛苦女王",
+   "tags": [
+    "Blue",
+    "Demon",
+    "Female",
+    "Horns",
+    "Wings"
+   ],
+   "prefix": [
+    "blue",
+    "horned",
+    "otherworldly"
+   ]
+  },
+  "40": {
+   "name": "venomancer",
+   "en": "Venomancer",
+   "zh": "剧毒术士",
+   "tags": [
+    "Green"
+   ],
+   "prefix": [
+    "green"
+   ]
+  },
+  "41": {
+   "name": "faceless_void",
+   "en": "Faceless Void",
+   "zh": "虚空假面",
+   "tags": [
+    "NicePecs",
+    "Purple"
+   ],
+   "prefix": [
+    "purple"
+   ]
+  },
+  "42": {
+   "name": "skeleton_king",
+   "en": "Wraith King",
+   "zh": "冥魂大帝",
+   "tags": [
+    "Bearded",
+    "Green",
+    "Undead"
+   ],
+   "prefix": [
+    "green",
+    "hairy",
+    "otherworldly"
+   ]
+  },
+  "43": {
+   "name": "death_prophet",
+   "en": "Death Prophet",
+   "zh": "死亡先知",
+   "tags": [
+    "Arachnophobic",
+    "Female",
+    "Flying",
+    "Undead"
+   ],
+   "prefix": [
+    "otherworldly"
+   ]
+  },
+  "44": {
+   "name": "phantom_assassin",
+   "en": "Phantom Assassin",
+   "zh": "幻影刺客",
+   "tags": [
+    "Cape",
+    "Female",
+    "Green"
+   ],
+   "prefix": [
+    "green",
+    "heroic"
+   ]
+  },
+  "45": {
+   "name": "pugna",
+   "en": "Pugna",
+   "zh": "帕格纳",
+   "tags": [
+    "Cape",
+    "Green",
+    "Horns",
+    "Undead"
+   ],
+   "prefix": [
+    "green",
+    "heroic",
+    "horned",
+    "otherworldly"
+   ]
+  },
+  "46": {
+   "name": "templar_assassin",
+   "en": "Templar Assassin",
+   "zh": "圣堂刺客",
+   "tags": [
+    "Female",
+    "Masked",
+    "Purple"
+   ],
+   "prefix": [
+    "purple"
+   ]
+  },
+  "47": {
+   "name": "viper",
+   "en": "Viper",
+   "zh": "冥界亚龙",
+   "tags": [
+    "Arachnophobic",
+    "Flying",
+    "Green",
+    "Wings"
+   ],
+   "prefix": [
+    "green",
+    "horned"
+   ]
+  },
+  "48": {
+   "name": "luna",
+   "en": "Luna",
+   "zh": "露娜",
+   "tags": [
+    "Blue",
+    "Female",
+    "Steed"
+   ],
+   "prefix": [
+    "blue"
+   ]
+  },
+  "49": {
+   "name": "dragon_knight",
+   "en": "Dragon Knight",
+   "zh": "龙骑士",
+   "tags": [
+    "Fiery",
+    "Red"
+   ],
+   "prefix": [
+    "elemental",
+    "red"
+   ]
+  },
+  "50": {
+   "name": "dazzle",
+   "en": "Dazzle",
+   "zh": "戴泽",
+   "tags": [
+    "Purple"
+   ],
+   "prefix": [
+    "purple"
+   ]
+  },
+  "51": {
+   "name": "rattletrap",
+   "en": "Clockwerk",
+   "zh": "发条技师",
+   "tags": [
+    "Arachnophobic",
+    "Mask",
+    "Red"
+   ],
+   "prefix": [
+    "heroic",
+    "red"
+   ]
+  },
+  "52": {
+   "name": "leshrac",
+   "en": "Leshrac",
+   "zh": "拉席克",
+   "tags": [
+    "Blue",
+    "Horns"
+   ],
+   "prefix": [
+    "blue",
+    "horned"
+   ]
+  },
+  "53": {
+   "name": "furion",
+   "en": "Nature's Prophet",
+   "zh": "自然先知",
+   "tags": [
+    "Arachnophobic",
+    "Bearded",
+    "Cape",
+    "Green"
+   ],
+   "prefix": [
+    "green",
+    "hairy",
+    "heroic"
+   ]
+  },
+  "54": {
+   "name": "life_stealer",
+   "en": "Lifestealer",
+   "zh": "噬魂鬼",
+   "tags": [
+    "BadTeeth",
+    "Undead"
+   ],
+   "prefix": [
+    "otherworldly"
+   ]
+  },
+  "55": {
+   "name": "dark_seer",
+   "en": "Dark Seer",
+   "zh": "黑暗贤者",
+   "tags": [
+    "Bearded",
+    "Parent",
+    "Purple"
+   ],
+   "prefix": [
+    "hairy",
+    "purple"
+   ]
+  },
+  "56": {
+   "name": "clinkz",
+   "en": "Clinkz",
+   "zh": "克林克兹",
+   "tags": [
+    "Fiery",
+    "Horns",
+    "Undead",
+    "Yellow"
+   ],
+   "prefix": [
+    "elemental",
+    "golden",
+    "horned",
+    "otherworldly"
+   ]
+  },
+  "57": {
+   "name": "omniknight",
+   "en": "Omniknight",
+   "zh": "全能骑士",
+   "tags": [
+    "Bearded",
+    "Cape"
+   ],
+   "prefix": [
+    "hairy",
+    "heroic"
+   ]
+  },
+  "58": {
+   "name": "enchantress",
+   "en": "Enchantress",
+   "zh": "魅惑魔女",
+   "tags": [
+    "Arachnophobic",
+    "Cute",
+    "Female",
+    "Fuzzy",
+    "Green",
+    "Horns"
+   ],
+   "prefix": [
+    "green",
+    "hairy",
+    "horned"
+   ]
+  },
+  "59": {
+   "name": "huskar",
+   "en": "Huskar",
+   "zh": "哈斯卡",
+   "tags": [
+    "Blue",
+    "Fiery",
+    "NicePecs",
+    "Undead"
+   ],
+   "prefix": [
+    "blue",
+    "elemental",
+    "otherworldly"
+   ]
+  },
+  "60": {
+   "name": "night_stalker",
+   "en": "Night Stalker",
+   "zh": "暗夜魔王",
+   "tags": [
+    "Blue",
+    "Flying",
+    "NicePecs",
+    "Wings"
+   ],
+   "prefix": [
+    "blue",
+    "horned"
+   ]
+  },
+  "61": {
+   "name": "broodmother",
+   "en": "Broodmother",
+   "zh": "育母蜘蛛",
+   "tags": [
+    "Female",
+    "Parent",
+    "Red"
+   ],
+   "prefix": [
+    "red"
+   ]
+  },
+  "62": {
+   "name": "bounty_hunter",
+   "en": "Bounty Hunter",
+   "zh": "赏金猎人",
+   "tags": [
+    "BadTeeth",
+    "Mask",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden",
+    "heroic"
+   ]
+  },
+  "63": {
+   "name": "weaver",
+   "en": "Weaver",
+   "zh": "编织者",
+   "tags": [
+    "Blue"
+   ],
+   "prefix": [
+    "blue"
+   ]
+  },
+  "64": {
+   "name": "jakiro",
+   "en": "Jakiro",
+   "zh": "杰奇洛",
+   "tags": [
+    "Blue",
+    "Fiery",
+    "Flying",
+    "Icy",
+    "Red",
+    "Wings"
+   ],
+   "prefix": [
+    "blue",
+    "elemental",
+    "horned",
+    "red"
+   ]
+  },
+  "65": {
+   "name": "batrider",
+   "en": "Batrider",
+   "zh": "蝙蝠骑士",
+   "tags": [
+    "Arachnophobic",
+    "Cape",
+    "Fiery",
+    "Flying",
+    "Red",
+    "Steed",
+    "Yellow"
+   ],
+   "prefix": [
+    "elemental",
+    "golden",
+    "heroic",
+    "red"
+   ]
+  },
+  "66": {
+   "name": "chen",
+   "en": "Chen",
+   "zh": "陈",
+   "tags": [
+    "Arachnophobic",
+    "Steed",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden"
+   ]
+  },
+  "67": {
+   "name": "spectre",
+   "en": "Spectre",
+   "zh": "幽鬼",
+   "tags": [
+    "Female",
+    "Purple",
+    "Undead"
+   ],
+   "prefix": [
+    "otherworldly",
+    "purple"
+   ]
+  },
+  "69": {
+   "name": "doom_bringer",
+   "en": "Doom",
+   "zh": "末日使者",
+   "tags": [
+    "Arachnophobic",
+    "Demon",
+    "Fiery",
+    "Horns",
+    "Red",
+    "Wings"
+   ],
+   "prefix": [
+    "elemental",
+    "horned",
+    "otherworldly",
+    "red"
+   ]
+  },
+  "68": {
+   "name": "ancient_apparition",
+   "en": "Ancient Apparition",
+   "zh": "远古冰魄",
+   "tags": [
+    "Blue",
+    "Flying",
+    "Icy"
+   ],
+   "prefix": [
+    "blue",
+    "elemental"
+   ]
+  },
+  "70": {
+   "name": "ursa",
+   "en": "Ursa",
+   "zh": "熊战士",
+   "tags": [
+    "Fuzzy",
+    "Parent",
+    "Purple"
+   ],
+   "prefix": [
+    "hairy",
+    "purple"
+   ]
+  },
+  "71": {
+   "name": "spirit_breaker",
+   "en": "Spirit Breaker",
+   "zh": "裂魂人",
+   "tags": [
+    "Bearded",
+    "Blue",
+    "Horns"
+   ],
+   "prefix": [
+    "blue",
+    "hairy",
+    "horned"
+   ]
+  },
+  "72": {
+   "name": "gyrocopter",
+   "en": "Gyrocopter",
+   "zh": "矮人直升机",
+   "tags": [
+    "Flying",
+    "Mask",
+    "Steed",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden",
+    "heroic"
+   ]
+  },
+  "73": {
+   "name": "alchemist",
+   "en": "Alchemist",
+   "zh": "炼金术士",
+   "tags": [
+    "Bearded",
+    "Potbelly",
+    "Steed",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden",
+    "hairy"
+   ]
+  },
+  "74": {
+   "name": "invoker",
+   "en": "Invoker",
+   "zh": "祈求者",
+   "tags": [
+    "Cape",
+    "Fiery",
+    "Icy",
+    "Parent"
+   ],
+   "prefix": [
+    "elemental",
+    "heroic"
+   ]
+  },
+  "75": {
+   "name": "silencer",
+   "en": "Silencer",
+   "zh": "沉默术士",
+   "tags": [
+    "Purple"
+   ],
+   "prefix": [
+    "purple"
+   ]
+  },
+  "76": {
+   "name": "obsidian_destroyer",
+   "en": "Outworld Destroyer",
+   "zh": "殁境神蚀者",
+   "tags": [
+    "Arachnophobic",
+    "Flying",
+    "Green",
+    "Wings"
+   ],
+   "prefix": [
+    "green",
+    "horned"
+   ]
+  },
+  "77": {
+   "name": "lycan",
+   "en": "Lycan",
+   "zh": "狼人",
+   "tags": [
+    "Arachnophobic",
+    "Bearded",
+    "Fuzzy",
+    "Red"
+   ],
+   "prefix": [
+    "hairy",
+    "red"
+   ]
+  },
+  "78": {
+   "name": "brewmaster",
+   "en": "Brewmaster",
+   "zh": "酒仙",
+   "tags": [
+    "Fiery",
+    "Fuzzy",
+    "Potbelly",
+    "Red"
+   ],
+   "prefix": [
+    "elemental",
+    "hairy",
+    "red"
+   ]
+  },
+  "79": {
+   "name": "shadow_demon",
+   "en": "Shadow Demon",
+   "zh": "暗影恶魔",
+   "tags": [
+    "Cape",
+    "Demon",
+    "NicePecs",
+    "Red"
+   ],
+   "prefix": [
+    "heroic",
+    "otherworldly",
+    "red"
+   ]
+  },
+  "80": {
+   "name": "lone_druid",
+   "en": "Lone Druid",
+   "zh": "独行德鲁伊",
+   "tags": [
+    "Arachnophobic",
+    "Bearded",
+    "Brown",
+    "Fuzzy"
+   ],
+   "prefix": [
+    "golden",
+    "hairy"
+   ]
+  },
+  "81": {
+   "name": "chaos_knight",
+   "en": "Chaos Knight",
+   "zh": "混沌骑士",
+   "tags": [
+    "Mask",
+    "Red",
+    "Steed"
+   ],
+   "prefix": [
+    "heroic",
+    "red"
+   ]
+  },
+  "82": {
+   "name": "meepo",
+   "en": "Meepo",
+   "zh": "米波",
+   "tags": [
+    "Cute",
+    "Fuzzy",
+    "Parent"
+   ],
+   "prefix": [
+    "hairy"
+   ]
+  },
+  "83": {
+   "name": "treant",
+   "en": "Treant Protector",
+   "zh": "树精卫士",
+   "tags": [
+    "Brown",
+    "Green"
+   ],
+   "prefix": [
+    "golden",
+    "green"
+   ]
+  },
+  "84": {
+   "name": "ogre_magi",
+   "en": "Ogre Magi",
+   "zh": "食人魔魔法师",
+   "tags": [
+    "Blue",
+    "Fiery",
+    "Potbelly"
+   ],
+   "prefix": [
+    "blue",
+    "elemental"
+   ]
+  },
+  "85": {
+   "name": "undying",
+   "en": "Undying",
+   "zh": "不朽尸王",
+   "tags": [
+    "BadTeeth",
+    "Green",
+    "Undead"
+   ],
+   "prefix": [
+    "green",
+    "otherworldly"
+   ]
+  },
+  "86": {
+   "name": "rubick",
+   "en": "Rubick",
+   "zh": "拉比克",
+   "tags": [
+    "Arachnophobic",
+    "Cape",
+    "Green",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden",
+    "green",
+    "heroic"
+   ]
+  },
+  "87": {
+   "name": "disruptor",
+   "en": "Disruptor",
+   "zh": "干扰者",
+   "tags": [
+    "Bearded",
+    "Red",
+    "Steed"
+   ],
+   "prefix": [
+    "hairy",
+    "red"
+   ]
+  },
+  "88": {
+   "name": "nyx_assassin",
+   "en": "Nyx Assassin",
+   "zh": "司夜刺客",
+   "tags": [
+    "Red"
+   ],
+   "prefix": [
+    "red"
+   ]
+  },
+  "89": {
+   "name": "naga_siren",
+   "en": "Naga Siren",
+   "zh": "娜迦海妖",
+   "tags": [
+    "Aquatic",
+    "Female",
+    "Green"
+   ],
+   "prefix": [
+    "elemental",
+    "green"
+   ]
+  },
+  "90": {
+   "name": "keeper_of_the_light",
+   "en": "Keeper of the Light",
+   "zh": "光之守卫",
+   "tags": [
+    "Bearded",
+    "Parent",
+    "Steed",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden",
+    "hairy"
+   ]
+  },
+  "91": {
+   "name": "wisp",
+   "en": "Io",
+   "zh": "艾欧",
+   "tags": [
+    "Blue",
+    "Flying"
+   ],
+   "prefix": [
+    "blue"
+   ]
+  },
+  "92": {
+   "name": "visage",
+   "en": "Visage",
+   "zh": "维萨吉",
+   "tags": [
+    "Blue",
+    "Flying",
+    "Wings"
+   ],
+   "prefix": [
+    "blue",
+    "horned"
+   ]
+  },
+  "93": {
+   "name": "slark",
+   "en": "Slark",
+   "zh": "斯拉克",
+   "tags": [
+    "Aquatic"
+   ],
+   "prefix": [
+    "elemental"
+   ]
+  },
+  "94": {
+   "name": "medusa",
+   "en": "Medusa",
+   "zh": "美杜莎",
+   "tags": [
+    "Female",
+    "Green"
+   ],
+   "prefix": [
+    "green"
+   ]
+  },
+  "95": {
+   "name": "troll_warlord",
+   "en": "Troll Warlord",
+   "zh": "巨魔战将",
+   "tags": [
+    "Red"
+   ],
+   "prefix": [
+    "red"
+   ]
+  },
+  "96": {
+   "name": "centaur",
+   "en": "Centaur Warrunner",
+   "zh": "半人马战行者",
+   "tags": [
+    "Bearded",
+    "Brown",
+    "Horns"
+   ],
+   "prefix": [
+    "golden",
+    "hairy",
+    "horned"
+   ]
+  },
+  "97": {
+   "name": "magnataur",
+   "en": "Magnus",
+   "zh": "马格纳斯",
+   "tags": [
+    "Brown",
+    "Fuzzy",
+    "Horns"
+   ],
+   "prefix": [
+    "golden",
+    "hairy",
+    "horned"
+   ]
+  },
+  "98": {
+   "name": "shredder",
+   "en": "Timbersaw",
+   "zh": "伐木机",
+   "tags": [
+    "BadTeeth",
+    "Purple",
+    "Steed"
+   ],
+   "prefix": [
+    "purple"
+   ]
+  },
+  "99": {
+   "name": "bristleback",
+   "en": "Bristleback",
+   "zh": "钢背兽",
+   "tags": [
+    "NicePecs",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden"
+   ]
+  },
+  "100": {
+   "name": "tusk",
+   "en": "Tusk",
+   "zh": "巨牙海民",
+   "tags": [
+    "Arachnophobic",
+    "Fuzzy",
+    "Icy"
+   ],
+   "prefix": [
+    "elemental",
+    "hairy"
+   ]
+  },
+  "101": {
+   "name": "skywrath_mage",
+   "en": "Skywrath Mage",
+   "zh": "天怒法师",
+   "tags": [
+    "Flying",
+    "Wings"
+   ],
+   "prefix": [
+    "horned"
+   ]
+  },
+  "102": {
+   "name": "abaddon",
+   "en": "Abaddon",
+   "zh": "亚巴顿",
+   "tags": [
+    "Blue",
+    "Cape",
+    "Purple",
+    "Steed"
+   ],
+   "prefix": [
+    "blue",
+    "heroic",
+    "purple"
+   ]
+  },
+  "103": {
+   "name": "elder_titan",
+   "en": "Elder Titan",
+   "zh": "上古巨神",
+   "tags": [
+    "Horns",
+    "NicePecs",
+    "Parent",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden",
+    "horned"
+   ]
+  },
+  "104": {
+   "name": "legion_commander",
+   "en": "Legion Commander",
+   "zh": "军团指挥官",
+   "tags": [
+    "Female",
+    "Red"
+   ],
+   "prefix": [
+    "red"
+   ]
+  },
+  "106": {
+   "name": "ember_spirit",
+   "en": "Ember Spirit",
+   "zh": "灰烬之灵",
+   "tags": [
+    "Fiery",
+    "Red",
+    "Spirit"
+   ],
+   "prefix": [
+    "elemental",
+    "otherworldly",
+    "red"
+   ]
+  },
+  "107": {
+   "name": "earth_spirit",
+   "en": "Earth Spirit",
+   "zh": "大地之灵",
+   "tags": [
+    "Green",
+    "NicePecs",
+    "Spirit"
+   ],
+   "prefix": [
+    "green",
+    "otherworldly"
+   ]
+  },
+  "109": {
+   "name": "terrorblade",
+   "en": "Terrorblade",
+   "zh": "恐怖利刃",
+   "tags": [
+    "Demon",
+    "Horns",
+    "Purple",
+    "Wings"
+   ],
+   "prefix": [
+    "horned",
+    "otherworldly",
+    "purple"
+   ]
+  },
+  "110": {
+   "name": "phoenix",
+   "en": "Phoenix",
+   "zh": "凤凰",
+   "tags": [
+    "Fiery",
+    "Flying",
+    "Red",
+    "Wings",
+    "Yellow"
+   ],
+   "prefix": [
+    "elemental",
+    "golden",
+    "horned",
+    "red"
+   ]
+  },
+  "111": {
+   "name": "oracle",
+   "en": "Oracle",
+   "zh": "神谕者",
+   "tags": [
+    "Blue",
+    "Cape",
+    "Flying"
+   ],
+   "prefix": [
+    "blue",
+    "heroic"
+   ]
+  },
+  "105": {
+   "name": "techies",
+   "en": "Techies",
+   "zh": "工程师",
+   "tags": [
+    "Fiery",
+    "Potbelly",
+    "Steed",
+    "Yellow"
+   ],
+   "prefix": [
+    "elemental",
+    "golden"
+   ]
+  },
+  "112": {
+   "name": "winter_wyvern",
+   "en": "Winter Wyvern",
+   "zh": "寒冬飞龙",
+   "tags": [
+    "Blue",
+    "Female",
+    "Flying",
+    "Icy",
+    "Wings"
+   ],
+   "prefix": [
+    "blue",
+    "elemental",
+    "horned"
+   ]
+  },
+  "113": {
+   "name": "arc_warden",
+   "en": "Arc Warden",
+   "zh": "天穹守望者",
+   "tags": [
+    "Arachnophobic",
+    "Blue",
+    "Cape"
+   ],
+   "prefix": [
+    "blue",
+    "heroic"
+   ]
+  },
+  "108": {
+   "name": "abyssal_underlord",
+   "en": "Underlord",
+   "zh": "孽主",
+   "tags": [
+    "Demon",
+    "Green",
+    "Horns",
+    "Potbelly"
+   ],
+   "prefix": [
+    "green",
+    "horned",
+    "otherworldly"
+   ]
+  },
+  "114": {
+   "name": "monkey_king",
+   "en": "Monkey King",
+   "zh": "齐天大圣",
+   "tags": [
+    "Cape",
+    "Fuzzy",
+    "Green"
+   ],
+   "prefix": [
+    "green",
+    "hairy",
+    "heroic"
+   ]
+  },
+  "120": {
+   "name": "pangolier",
+   "en": "Pangolier",
+   "zh": "石鳞剑士",
+   "tags": [
+    "Fuzzy",
+    "Parent",
+    "Red"
+   ],
+   "prefix": [
+    "hairy",
+    "red"
+   ]
+  },
+  "119": {
+   "name": "dark_willow",
+   "en": "Dark Willow",
+   "zh": "邪影芳灵",
+   "tags": [
+    "Cute",
+    "Female",
+    "Flying",
+    "Green",
+    "Purple",
+    "Wings"
+   ],
+   "prefix": [
+    "green",
+    "horned",
+    "purple"
+   ]
+  },
+  "121": {
+   "name": "grimstroke",
+   "en": "Grimstroke",
+   "zh": "天涯墨客",
+   "tags": [
+    "Bearded",
+    "Flying",
+    "Mask",
+    "Undead"
+   ],
+   "prefix": [
+    "hairy",
+    "heroic",
+    "otherworldly"
+   ]
+  },
+  "129": {
+   "name": "mars",
+   "en": "Mars",
+   "zh": "玛尔斯",
+   "tags": [
+    "Bearded",
+    "NicePecs",
+    "Parent",
+    "Red"
+   ],
+   "prefix": [
+    "hairy",
+    "red"
+   ]
+  },
+  "126": {
+   "name": "void_spirit",
+   "en": "Void Spirit",
+   "zh": "虚无之灵",
+   "tags": [
+    "Bearded",
+    "NicePecs",
+    "Purple",
+    "Spirit"
+   ],
+   "prefix": [
+    "hairy",
+    "otherworldly",
+    "purple"
+   ]
+  },
+  "128": {
+   "name": "snapfire",
+   "en": "Snapfire",
+   "zh": "电炎绝手",
+   "tags": [
+    "Female",
+    "Red",
+    "Steed"
+   ],
+   "prefix": [
+    "red"
+   ]
+  },
+  "123": {
+   "name": "hoodwink",
+   "en": "Hoodwink",
+   "zh": "森海飞霞",
+   "tags": [
+    "Cute",
+    "Female",
+    "Fuzzy",
+    "Green"
+   ],
+   "prefix": [
+    "green",
+    "hairy"
+   ]
+  },
+  "135": {
+   "name": "dawnbreaker",
+   "en": "Dawnbreaker",
+   "zh": "破晓辰星",
+   "tags": [
+    "Female",
+    "Fiery",
+    "Yellow"
+   ],
+   "prefix": [
+    "elemental",
+    "golden"
+   ]
+  },
+  "136": {
+   "name": "marci",
+   "en": "Marci",
+   "zh": "玛西",
+   "tags": [
+    "Cape",
+    "Cute",
+    "Female"
+   ],
+   "prefix": [
+    "heroic"
+   ]
+  },
+  "137": {
+   "name": "primal_beast",
+   "en": "Primal Beast",
+   "zh": "獸",
+   "tags": [
+    "BadTeeth",
+    "Brown",
+    "Red"
+   ],
+   "prefix": [
+    "golden",
+    "red"
+   ]
+  },
+  "138": {
+   "name": "muerta",
+   "en": "Muerta",
+   "zh": "琼英碧灵",
+   "tags": [
+    "Blue",
+    "Cape",
+    "Female",
+    "Green",
+    "Undead"
+   ],
+   "prefix": [
+    "blue",
+    "green",
+    "heroic",
+    "otherworldly"
+   ]
+  },
+  "131": {
+   "name": "ringmaster",
+   "en": "Ringmaster",
+   "zh": "百戏大王",
+   "tags": [
+    "Red",
+    "Yellow"
+   ],
+   "prefix": [
+    "golden",
+    "red"
+   ]
+  },
+  "145": {
+   "name": "kez",
+   "en": "Kez",
+   "zh": "凯",
+   "tags": [
+    "Blue"
+   ],
+   "prefix": [
+    "blue"
+   ]
+  },
+  "155": {
+   "name": "largo",
+   "en": "Largo",
+   "zh": "朗戈",
+   "tags": [
+    "Brown",
+    "Green"
+   ],
+   "prefix": [
+    "golden",
+    "green"
+   ]
+  }
+ },
+ "prefixes": {
+  "red": [
+   "Red"
+  ],
+  "blue": [
+   "Blue"
+  ],
+  "green": [
+   "Green"
+  ],
+  "purple": [
+   "Purple"
+  ],
+  "golden": [
+   "Yellow",
+   "Brown"
+  ],
+  "horned": [
+   "Horns",
+   "Wings"
+  ],
+  "elemental": [
+   "Aquatic",
+   "Fiery",
+   "Icy"
+  ],
+  "otherworldly": [
+   "Undead",
+   "Demon",
+   "Spirit"
+  ],
+  "hairy": [
+   "Bearded",
+   "Fuzzy"
+  ],
+  "heroic": [
+   "Cape",
+   "Mask"
+  ]
+ }
+}

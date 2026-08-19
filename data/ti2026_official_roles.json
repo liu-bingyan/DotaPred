@@ -1,0 +1,482 @@
+{
+ "97590558": {
+  "role": "core",
+  "name": "Ace ♠",
+  "team_id": 2163,
+  "valid": true
+ },
+ "152962063": {
+  "role": "core",
+  "name": "m1CKe",
+  "team_id": 2163,
+  "valid": true
+ },
+ "118134220": {
+  "role": "core",
+  "name": "Bach",
+  "team_id": 726228,
+  "valid": true
+ },
+ "320252024": {
+  "role": "core",
+  "name": "shiro",
+  "team_id": 726228,
+  "valid": true
+ },
+ "132309493": {
+  "role": "core",
+  "name": "Raven",
+  "team_id": 2586976,
+  "valid": true
+ },
+ "355168766": {
+  "role": "core",
+  "name": "Natsumi",
+  "team_id": 2586976,
+  "valid": true
+ },
+ "145957968": {
+  "role": "core",
+  "name": "niu",
+  "team_id": 5017210,
+  "valid": true
+ },
+ "170896543": {
+  "role": "core",
+  "name": "YSR-04E",
+  "team_id": 5017210,
+  "valid": true
+ },
+ "302214028": {
+  "role": "core",
+  "name": "Collapse",
+  "team_id": 7119388,
+  "valid": true
+ },
+ "321580662": {
+  "role": "core",
+  "name": "Yatoro",
+  "team_id": 7119388,
+  "valid": true
+ },
+ "165564598": {
+  "role": "core",
+  "name": "MieRo",
+  "team_id": 8255888,
+  "valid": true
+ },
+ "172099728": {
+  "role": "core",
+  "name": "Kiritych~",
+  "team_id": 8255888,
+  "valid": true
+ },
+ "129958758": {
+  "role": "core",
+  "name": "Xxs",
+  "team_id": 8261500,
+  "valid": true
+ },
+ "898754153": {
+  "role": "core",
+  "name": "Ame",
+  "team_id": 8261500,
+  "valid": true
+ },
+ "100058342": {
+  "role": "core",
+  "name": "skiter",
+  "team_id": 9247354,
+  "valid": true
+ },
+ "183719386": {
+  "role": "core",
+  "name": "AMMAR_THE_F",
+  "team_id": 9247354,
+  "valid": true
+ },
+ "124801257": {
+  "role": "core",
+  "name": "Nightfall",
+  "team_id": 9467224,
+  "valid": true
+ },
+ "126842529": {
+  "role": "core",
+  "name": "Ws`",
+  "team_id": 9467224,
+  "valid": true
+ },
+ "195108598": {
+  "role": "core",
+  "name": "Noticed",
+  "team_id": 9572001,
+  "valid": true
+ },
+ "1044002267": {
+  "role": "core",
+  "name": "Satanic",
+  "team_id": 9572001,
+  "valid": true
+ },
+ "56351509": {
+  "role": "core",
+  "name": "DM",
+  "team_id": 9823272,
+  "valid": true
+ },
+ "171262902": {
+  "role": "core",
+  "name": "医者watson`",
+  "team_id": 9823272,
+  "valid": true
+ },
+ "160119017": {
+  "role": "core",
+  "name": "Fayde",
+  "team_id": 9964962,
+  "valid": true
+ },
+ "206642367": {
+  "role": "core",
+  "name": "Ghost",
+  "team_id": 9964962,
+  "valid": true
+ },
+ "111620041": {
+  "role": "core",
+  "name": "SumaiL-",
+  "team_id": 10136357,
+  "valid": true
+ },
+ "138880576": {
+  "role": "core",
+  "name": "Davai",
+  "team_id": 10136357,
+  "valid": true
+ },
+ "92487440": {
+  "role": "core",
+  "name": "Corrupted",
+  "team_id": 10149530,
+  "valid": true
+ },
+ "320017600": {
+  "role": "core",
+  "name": "ssnovv1",
+  "team_id": 10149530,
+  "valid": true
+ },
+ "86698277": {
+  "role": "core",
+  "name": "33",
+  "team_id": 10150413,
+  "valid": true
+ },
+ "331855530": {
+  "role": "core",
+  "name": "Pure",
+  "team_id": 10150413,
+  "valid": true
+ },
+ "177203952": {
+  "role": "core",
+  "name": "Yuma",
+  "team_id": 10150538,
+  "valid": true
+ },
+ "292921272": {
+  "role": "core",
+  "name": "Wisper",
+  "team_id": 10150538,
+  "valid": true
+ },
+ "201358612": {
+  "role": "mid",
+  "name": "Nisha",
+  "team_id": 2163,
+  "valid": true
+ },
+ "137129583": {
+  "role": "mid",
+  "name": "Xm",
+  "team_id": 726228,
+  "valid": true
+ },
+ "324277900": {
+  "role": "mid",
+  "name": "Yopaj-",
+  "team_id": 2586976,
+  "valid": true
+ },
+ "315272623": {
+  "role": "mid",
+  "name": "Echozz",
+  "team_id": 5017210,
+  "valid": true
+ },
+ "106305042": {
+  "role": "mid",
+  "name": "Larl",
+  "team_id": 7119388,
+  "valid": true
+ },
+ "480412663": {
+  "role": "mid",
+  "name": "gpk~",
+  "team_id": 8255888,
+  "valid": true
+ },
+ "173978074": {
+  "role": "mid",
+  "name": "NothingToSay",
+  "team_id": 8261500,
+  "valid": true
+ },
+ "898455820": {
+  "role": "mid",
+  "name": "Malr1ne",
+  "team_id": 9247354,
+  "valid": true
+ },
+ "301750126": {
+  "role": "mid",
+  "name": "Mikoto",
+  "team_id": 9467224,
+  "valid": true
+ },
+ "106573901": {
+  "role": "mid",
+  "name": "No[o]ne-",
+  "team_id": 9572001,
+  "valid": true
+ },
+ "312436974": {
+  "role": "mid",
+  "name": "CHIRA_JUNIOR",
+  "team_id": 9823272,
+  "valid": true
+ },
+ "154974246": {
+  "role": "mid",
+  "name": "RCY",
+  "team_id": 9964962,
+  "valid": true
+ },
+ "210053851": {
+  "role": "mid",
+  "name": "lorenof",
+  "team_id": 10136357,
+  "valid": true
+ },
+ "140251702": {
+  "role": "mid",
+  "name": "Mirage`雨",
+  "team_id": 10149530,
+  "valid": true
+ },
+ "93618577": {
+  "role": "mid",
+  "name": "bzm",
+  "team_id": 10150413,
+  "valid": true
+ },
+ "1026694469": {
+  "role": "mid",
+  "name": "TaiLung",
+  "team_id": 10150538,
+  "valid": true
+ },
+ "16497807": {
+  "role": "support",
+  "name": "tOfu",
+  "team_id": 2163,
+  "valid": true
+ },
+ "77490514": {
+  "role": "support",
+  "name": "Boxi",
+  "team_id": 2163,
+  "valid": true
+ },
+ "111114687": {
+  "role": "support",
+  "name": "y`",
+  "team_id": 726228,
+  "valid": true
+ },
+ "157475523": {
+  "role": "support",
+  "name": "XinQ",
+  "team_id": 726228,
+  "valid": true
+ },
+ "100594231": {
+  "role": "support",
+  "name": "skem",
+  "team_id": 2586976,
+  "valid": true
+ },
+ "155494381": {
+  "role": "support",
+  "name": "TIMS",
+  "team_id": 2586976,
+  "valid": true
+ },
+ "150961567": {
+  "role": "support",
+  "name": "planet",
+  "team_id": 5017210,
+  "valid": true
+ },
+ "249835593": {
+  "role": "support",
+  "name": "zzq",
+  "team_id": 5017210,
+  "valid": true
+ },
+ "218231587": {
+  "role": "support",
+  "name": "not_me",
+  "team_id": 7119388,
+  "valid": true
+ },
+ "847565596": {
+  "role": "support",
+  "name": "rue",
+  "team_id": 7119388,
+  "valid": true
+ },
+ "196878136": {
+  "role": "support",
+  "name": "Kataomi`",
+  "team_id": 8255888,
+  "valid": true
+ },
+ "317880638": {
+  "role": "support",
+  "name": "Save-",
+  "team_id": 8255888,
+  "valid": true
+ },
+ "94296097": {
+  "role": "support",
+  "name": "xNova",
+  "team_id": 8261500,
+  "valid": true
+ },
+ "101695162": {
+  "role": "support",
+  "name": "fy",
+  "team_id": 8261500,
+  "valid": true
+ },
+ "10366616": {
+  "role": "support",
+  "name": "Sneyking",
+  "team_id": 9247354,
+  "valid": true
+ },
+ "25907144": {
+  "role": "support",
+  "name": "Cr1t-",
+  "team_id": 9247354,
+  "valid": true
+ },
+ "256156323": {
+  "role": "support",
+  "name": "Mira",
+  "team_id": 9467224,
+  "valid": true
+ },
+ "320219866": {
+  "role": "support",
+  "name": "kaori",
+  "team_id": 9467224,
+  "valid": true
+ },
+ "73401082": {
+  "role": "support",
+  "name": "Dukalis",
+  "team_id": 9572001,
+  "valid": true
+ },
+ "164199202": {
+  "role": "support",
+  "name": "9Class",
+  "team_id": 9572001,
+  "valid": true
+ },
+ "93817671": {
+  "role": "support",
+  "name": "Maladych",
+  "team_id": 9823272,
+  "valid": true
+ },
+ "103735745": {
+  "role": "support",
+  "name": "Saksa",
+  "team_id": 9823272,
+  "valid": true
+ },
+ "90423751": {
+  "role": "support",
+  "name": "Bignum",
+  "team_id": 9964962,
+  "valid": true
+ },
+ "191362875": {
+  "role": "support",
+  "name": "Speeed",
+  "team_id": 9964962,
+  "valid": true
+ },
+ "101356886": {
+  "role": "support",
+  "name": "GH",
+  "team_id": 10136357,
+  "valid": true
+ },
+ "152168157": {
+  "role": "support",
+  "name": "OmaR",
+  "team_id": 10136357,
+  "valid": true
+ },
+ "123787715": {
+  "role": "support",
+  "name": "RESPECT",
+  "team_id": 10149530,
+  "valid": true
+ },
+ "145065875": {
+  "role": "support",
+  "name": "sayuw",
+  "team_id": 10149530,
+  "valid": true
+ },
+ "136829091": {
+  "role": "support",
+  "name": "Whitemon",
+  "team_id": 10150413,
+  "valid": true
+ },
+ "346412363": {
+  "role": "support",
+  "name": "Ari",
+  "team_id": 10150413,
+  "valid": true
+ },
+ "81306398": {
+  "role": "support",
+  "name": "KingJungles",
+  "team_id": 10150538,
+  "valid": true
+ },
+ "105045291": {
+  "role": "support",
+  "name": "Thiolicor",
+  "team_id": 10150538,
+  "valid": true
+ }
+}

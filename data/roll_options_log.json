@@ -1,0 +1,5316 @@
+{
+ "note": "每次界面上出现的三个操作选项。目的是估计操作池的抽样分布 —— 这是代币策略唯一缺的输入。\n⚠️ censored=true 的记录不能用于估计分布：它们来自「拿不定主意时才记录」的规则，含有明显好选项（尤其是「提升品质」）的刷新被系统性删掉了。只能用于核对机制，不能用于计数。\n从 2026-08-03 起改为：每次刷新出现后、决定之前一律记录，无论多显然。\nbanner_states 是**追加序列**（tokens_before 递减 = 时间轴），末项即当前状态；banner_decide.py 读末项、--apply 追加新条目，历史条目一律不改。每条快照带 shown（客户端印的倍率，用于对账）、teams、via（由哪个操作产生 + 可达性检验 + 事前预测的 E[Δ]）。\n2026-08-13 起进入国际邀请赛期：每面战旗 5 枚徽标，颜色布局 核心=红绿红绿红、中单=红蓝绿红绿、辅助=蓝绿蓝绿蓝；代币 30。分形要求全部 5 枚阶数互不相同（中单 5,1,4,2,1 实测为 0，证伪了『没有别的徽标与我同阶』那种读法）。\n\n❗ 2026-08-15 用户澄清：**「提升品质」确实在池里**，只是每次出现时用户都直接点掉了，从来没拿来讨论、也就从来没进 draws。所以 draws 里「提升品质 0 次」不是证据，它正是本 note 第一段描述的那种删失 —— 而且这个删失是**持续存在的**，不只是 8-03 之前的旧规则。\n⇒ **任何从 draws 推断动词频率的结论都必须排除 increase_quality，并且对 roll_quality/roll_trait/roll_stat 的相对频率也要打折**（它们的计数里混着「因为没有提升品质才被拿来问」的选择效应）。\n要修的话只有一条路：出现提升品质时也先记一条再点。",
+ "vocab": {
+  "verb": [
+   "increase_quality",
+   "roll_quality",
+   "roll_trait",
+   "roll_stat",
+   "increase_one_quality",
+   "increase_two_decrease_one"
+  ],
+  "target": [
+   "choose_one",
+   "all",
+   "ruby",
+   "sapphire",
+   "emerald",
+   "first_all",
+   "first_ruby",
+   "first_sapphire",
+   "first_emerald",
+   "last_all",
+   "last_ruby",
+   "last_sapphire",
+   "last_emerald",
+   "random_all",
+   "random_ruby",
+   "random_sapphire",
+   "random_emerald",
+   "none"
+  ],
+  "banner": [
+   "core",
+   "mid",
+   "support"
+  ]
+ },
+ "draws": [
+  {
+   "tokens_before": 40,
+   "banner_open": "core",
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "ruby",
+     "cn": "重新生成红色徽标的品质"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "first_emerald",
+     "cn": "重新生成第一枚绿色徽标的统计数据"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "random_sapphire",
+     "cn": "重新生成随机一枚蓝色徽标的特性"
+    }
+   ],
+   "chosen": null,
+   "censored": true,
+   "censor_rule": "仅在用户拿不定主意时记录；含明显好选项的刷新被删除"
+  },
+  {
+   "tokens_before": 36,
+   "banner_open": "core",
+   "options": [
+    {
+     "verb": "roll_trait",
+     "target": "sapphire",
+     "cn": "重新生成蓝色徽标的特性"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "first_emerald",
+     "cn": "重新生成第一枚绿色徽标的统计数据"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "ruby",
+     "cn": "重新生成红色徽标的品质"
+    }
+   ],
+   "chosen": "roll_quality/ruby",
+   "applied_to": "mid",
+   "outcome": "中单①正反补 第1阶->第2阶，与③团战撞阶，分形 +80% -> +20%",
+   "censored": true,
+   "censor_rule": "仅在用户拿不定主意时记录；含明显好选项的刷新被删除"
+  },
+  {
+   "tokens_before": 35,
+   "banner_open": "mid",
+   "options": [
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重新生成蓝色徽标的统计数据"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "emerald",
+     "cn": "重新生成绿色徽标的统计数据"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "last_sapphire",
+     "cn": "重新生成最后一枚蓝色徽标的特性"
+    }
+   ],
+   "chosen": "roll_stat/sapphire",
+   "censored": true,
+   "censor_rule": "仅在用户拿不定主意时记录；含明显好选项的刷新被删除",
+   "applied_to": "support",
+   "outcome": "辅助①激活神符->开雾次数(925)，③占领观察者->野怪堆叠(860)；品质特性不变"
+  },
+  {
+   "tokens_before": 34,
+   "banner_open": "support",
+   "options": [
+    {
+     "verb": "roll_trait",
+     "target": "sapphire",
+     "cn": "重新生成蓝色徽标的特性"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "ruby",
+     "cn": "重新生成红色徽标的特性"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "random_ruby",
+     "cn": "重新生成随机一枚红色徽标的品质"
+    }
+   ],
+   "chosen": "roll_quality/random_ruby",
+   "censored": false,
+   "note": "35->34 无跳过，这一条是完整记录",
+   "applied_to": "mid",
+   "outcome": "中单①正反补 第2阶->第3阶 (150%->180%)；与②神符第3阶撞阶，分形仍为0"
+  },
+  {
+   "tokens_before": 33,
+   "banner_open": "support",
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重新生成蓝色徽标的统计数据"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "emerald",
+     "cn": "重新生成绿色徽标的特性"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "emerald",
+     "cn": "重新生成绿色徽标的统计数据"
+    }
+   ],
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 32,
+   "banner_open": "core",
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "emerald",
+     "cn": "重新生成绿色徽标的品质"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "ruby",
+     "cn": "重新生成红色徽标的统计数据"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重新生成蓝色徽标的统计数据"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 11,
+   "banner_open": "support",
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_stat",
+     "target": "emerald",
+     "cn": "重新生成绿色徽标的统计数据"
+    },
+    {
+     "verb": "increase_two_decrease_one",
+     "target": "none",
+     "cn": "随机提升两项品质，并降低一项品质"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "random_ruby",
+     "cn": "重新生成随机一枚红色徽标的品质",
+     "greyed": true
+    }
+   ],
+   "chosen": null,
+   "note": "第三项因当前打开的是辅助（蓝绿蓝，无红）而灰掉；切到核心即可用"
+  },
+  {
+   "tokens_before": 10,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重选统计项·蓝色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "last_ruby",
+     "cn": "重选品质·最后一枚红"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "first_emerald",
+     "cn": "重选统计项·第一枚绿"
+    }
+   ],
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 9,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "emerald",
+     "cn": "重选品质·绿色全部"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "random_emerald",
+     "cn": "重选统计项·随机一枚绿"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "ruby",
+     "cn": "重选统计项·红色全部"
+    }
+   ],
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 8,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "first_ruby",
+     "cn": "重选品质·第一枚红"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "emerald",
+     "cn": "重选统计项·绿色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "emerald",
+     "cn": "重选品质·绿色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 7,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_trait",
+     "target": "ruby",
+     "cn": "重选特性·红色全部"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "random_sapphire",
+     "cn": "重选特性·随机一枚蓝"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "sapphire",
+     "cn": "重选特性·蓝色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 6,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "random_ruby",
+     "cn": "重选品质·随机一枚红"
+    },
+    {
+     "verb": "increase_one_quality",
+     "target": "none",
+     "cn": "随机提升一项品质"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "emerald",
+     "cn": "重选统计项·绿色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 5,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_stat",
+     "target": "last_emerald",
+     "cn": "重选统计项·最后一枚绿"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "ruby",
+     "cn": "重选特性·红色全部"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "first_sapphire",
+     "cn": "重选特性·第一枚蓝"
+    }
+   ],
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 28,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "increase_two_decrease_one",
+     "target": "none",
+     "cn": "随机提升两项、降低一项"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "random_sapphire",
+     "cn": "重选特性·随机一枚蓝"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重选统计项·蓝色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 27,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "last_ruby",
+     "cn": "重选品质·最后一枚红"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "emerald",
+     "cn": "重选特性·绿色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "random_ruby",
+     "cn": "重选品质·随机一枚红"
+    }
+   ],
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 26,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_trait",
+     "target": "last_sapphire",
+     "cn": "重选特性·最后一枚蓝"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重选统计项·蓝色全部"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "first_emerald",
+     "cn": "重选统计项·第一枚绿"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 24,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_trait",
+     "target": "sapphire",
+     "cn": "重选特性·蓝色全部"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "emerald",
+     "cn": "重选特性·绿色全部"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "first_sapphire",
+     "cn": "重选特性·第一枚蓝"
+    }
+   ],
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 23,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_trait",
+     "target": "first_sapphire",
+     "cn": "重选特性·第一枚蓝"
+    },
+    {
+     "verb": "increase_two_decrease_one",
+     "target": "none",
+     "cn": "随机提升两项、降低一项"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "emerald",
+     "cn": "重选品质·绿色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 22,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "random_ruby",
+     "cn": "重选品质·随机一枚红"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "random_sapphire",
+     "cn": "重选特性·随机一枚蓝"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "emerald",
+     "cn": "重选统计项·绿色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 21,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_stat",
+     "target": "ruby",
+     "cn": "重选统计项·红色全部"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "random_emerald",
+     "cn": "重选统计项·随机一枚绿"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "emerald",
+     "cn": "重选品质·绿色全部"
+    }
+   ],
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 19,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重选统计项·蓝色全部"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "ruby",
+     "cn": "重选特性·红色全部"
+    },
+    {
+     "verb": "increase_one_quality",
+     "target": "none",
+     "cn": "随机提升一项品质"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 18,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_stat",
+     "target": "ruby",
+     "cn": "重选统计项·红色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "first_ruby",
+     "cn": "重选品质·第一枚红"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "sapphire",
+     "cn": "重选特性·蓝色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 15,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "increase_one_quality",
+     "target": "none",
+     "cn": "随机提升一项品质"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "ruby",
+     "cn": "重选品质·红色全部"
+    },
+    {
+     "verb": "increase_two_decrease_one",
+     "target": "none",
+     "cn": "随机提升两项、降低一项"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 14,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_trait",
+     "target": "last_sapphire",
+     "cn": "重选特性·最后一枚蓝"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "last_emerald",
+     "cn": "重选统计项·最后一枚绿"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "sapphire",
+     "cn": "重选品质·蓝色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 13,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_stat",
+     "target": "random_emerald",
+     "cn": "重选统计项·随机一枚绿"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "ruby",
+     "cn": "重选统计项·红色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "ruby",
+     "cn": "重选品质·红色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 12,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_trait",
+     "target": "sapphire",
+     "cn": "重选特性·蓝色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "emerald",
+     "cn": "重选品质·绿色全部"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "emerald",
+     "cn": "重选特性·绿色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 11,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_trait",
+     "target": "emerald",
+     "cn": "重选特性·绿色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "ruby",
+     "cn": "重选品质·红色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "random_ruby",
+     "cn": "重选品质·随机一枚红"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 10,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "last_ruby",
+     "cn": "重选品质·最后一枚红"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "sapphire",
+     "cn": "重选特性·蓝色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "ruby",
+     "cn": "重选品质·红色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 9,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "increase_one_quality",
+     "target": "none",
+     "cn": "随机提升一项品质"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "emerald",
+     "cn": "重选特性·绿色全部"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重选统计项·蓝色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 8,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "sapphire",
+     "cn": "重选品质·蓝色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "last_ruby",
+     "cn": "重选品质·最后一枚红"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "first_ruby",
+     "cn": "重选品质·第一枚红"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 7,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_trait",
+     "target": "sapphire",
+     "cn": "重选特性·蓝色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "random_ruby",
+     "cn": "重选品质·随机一枚红"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "first_emerald",
+     "cn": "重选统计项·第一枚绿"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 6,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_stat",
+     "target": "last_emerald",
+     "cn": "重选统计项·最后一枚绿"
+    },
+    {
+     "verb": "increase_two_decrease_one",
+     "target": "none",
+     "cn": "随机提升两项、降低一项"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重选统计项·蓝色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 5,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "emerald",
+     "cn": "重选品质·绿色全部"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "random_ruby",
+     "cn": "重选品质·随机一枚红"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "last_ruby",
+     "cn": "重选品质·最后一枚红"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 4,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "last_ruby",
+     "cn": "重选品质·最后一枚红"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "emerald",
+     "cn": "重选特性·绿色全部"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重选统计项·蓝色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 3,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "increase_two_decrease_one",
+     "target": "none",
+     "cn": "随机提升两项、降低一项"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "random_sapphire",
+     "cn": "重选特性·随机一枚蓝"
+    },
+    {
+     "verb": "roll_trait",
+     "target": "emerald",
+     "cn": "重选特性·绿色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 2,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "emerald",
+     "cn": "重选品质·绿色全部"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "sapphire",
+     "cn": "重选统计项·蓝色全部"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "emerald",
+     "cn": "重选统计项·绿色全部"
+    }
+   ],
+   "chosen": null
+  },
+  {
+   "tokens_before": 1,
+   "banner_open": null,
+   "censored": false,
+   "options": [
+    {
+     "verb": "roll_quality",
+     "target": "first_ruby",
+     "cn": "重选品质·第一枚红"
+    },
+    {
+     "verb": "roll_quality",
+     "target": "last_ruby",
+     "cn": "重选品质·最后一枚红"
+    },
+    {
+     "verb": "roll_stat",
+     "target": "ruby",
+     "cn": "重选统计项·红色全部"
+    }
+   ],
+   "chosen": null
+  }
+ ],
+ "banner_states": [
+  {
+   "tokens_before": 40,
+   "core": [
+    [
+     "towers",
+     2,
+     "fractal"
+    ],
+    [
+     "tormentor",
+     1,
+     "friendly"
+    ],
+    [
+     "gpm",
+     2,
+     "benevolent"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     1,
+     "fractal"
+    ],
+    [
+     "runes",
+     3,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     2,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "runes",
+     3,
+     "fractal"
+    ],
+    [
+     "teamfight",
+     2,
+     "unique"
+    ],
+    [
+     "watchers",
+     3,
+     "vampiric"
+    ]
+   ]
+  },
+  {
+   "tokens_before": 36,
+   "core": [
+    [
+     "towers",
+     5,
+     "benevolent"
+    ],
+    [
+     "tormentor",
+     2,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     1,
+     "fractal"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     1,
+     "fractal"
+    ],
+    [
+     "runes",
+     3,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     2,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "runes",
+     3,
+     "fractal"
+    ],
+    [
+     "teamfight",
+     2,
+     "unique"
+    ],
+    [
+     "watchers",
+     3,
+     "vampiric"
+    ]
+   ]
+  },
+  {
+   "tokens_before": 35,
+   "core": [
+    [
+     "towers",
+     5,
+     "benevolent"
+    ],
+    [
+     "tormentor",
+     2,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     1,
+     "fractal"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     2,
+     "fractal"
+    ],
+    [
+     "runes",
+     3,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     2,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "runes",
+     3,
+     "fractal"
+    ],
+    [
+     "teamfight",
+     2,
+     "unique"
+    ],
+    [
+     "watchers",
+     3,
+     "vampiric"
+    ]
+   ]
+  },
+  {
+   "tokens_before": 34,
+   "core": [
+    [
+     "towers",
+     5,
+     "benevolent"
+    ],
+    [
+     "tormentor",
+     2,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     1,
+     "fractal"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     2,
+     "fractal"
+    ],
+    [
+     "runes",
+     3,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     2,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     3,
+     "fractal"
+    ],
+    [
+     "teamfight",
+     2,
+     "unique"
+    ],
+    [
+     "stacks",
+     3,
+     "vampiric"
+    ]
+   ]
+  },
+  {
+   "tokens_before": 33,
+   "core": [
+    [
+     "towers",
+     5,
+     "benevolent"
+    ],
+    [
+     "tormentor",
+     2,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     1,
+     "fractal"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     3,
+     "fractal"
+    ],
+    [
+     "runes",
+     3,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     2,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     3,
+     "fractal"
+    ],
+    [
+     "teamfight",
+     2,
+     "unique"
+    ],
+    [
+     "stacks",
+     3,
+     "vampiric"
+    ]
+   ]
+  },
+  {
+   "tokens_before": 11,
+   "core": [
+    [
+     "towers",
+     5,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     2,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     2,
+     "fractal"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "as_of": "2026-08-08",
+   "open": "support",
+   "shown": {
+    "core": [
+     270,
+     150,
+     150
+    ],
+    "mid": [
+     330,
+     100,
+     270
+    ],
+    "support": [
+     300,
+     150,
+     200
+    ]
+   }
+  },
+  {
+   "tokens_before": 10,
+   "core": [
+    [
+     "towers",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "fractal"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     130,
+     220,
+     220
+    ],
+    "mid": [
+     330,
+     100,
+     270
+    ],
+    "support": [
+     300,
+     150,
+     200
+    ]
+   },
+   "as_of": "2026-08-08",
+   "via": {
+    "op": "increase_two_decrease_one/none",
+    "applied_to": "core",
+    "reachable": true,
+    "predicted_delta": 1488.0
+   },
+   "chosen": "increase_two_decrease_one"
+  },
+  {
+   "tokens_before": 9,
+   "core": [
+    [
+     "towers",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "fractal"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     130,
+     220,
+     220
+    ],
+    "mid": [
+     330,
+     100,
+     270
+    ],
+    "support": [
+     300,
+     150,
+     200
+    ]
+   },
+   "as_of": "2026-08-08",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   }
+  },
+  {
+   "tokens_before": 8,
+   "core": [
+    [
+     "towers",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "fractal"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     130,
+     220,
+     220
+    ],
+    "mid": [
+     330,
+     100,
+     270
+    ],
+    "support": [
+     300,
+     150,
+     200
+    ]
+   },
+   "as_of": "2026-08-08",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   }
+  },
+  {
+   "tokens_before": 7,
+   "core": [
+    [
+     "towers",
+     2,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "fractal"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     150,
+     220,
+     220
+    ],
+    "mid": [
+     330,
+     100,
+     270
+    ],
+    "support": [
+     300,
+     150,
+     200
+    ]
+   },
+   "as_of": "2026-08-08",
+   "via": {
+    "op": "roll_quality/first_ruby",
+    "applied_to": "core",
+    "reachable": true,
+    "predicted_delta": 1876.0
+   },
+   "chosen": "roll_quality/first_ruby"
+  },
+  {
+   "tokens_before": 6,
+   "core": [
+    [
+     "towers",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     4,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     200,
+     180,
+     270
+    ],
+    "mid": [
+     330,
+     100,
+     270
+    ],
+    "support": [
+     300,
+     150,
+     200
+    ]
+   },
+   "as_of": "2026-08-08",
+   "via": {
+    "op": "roll_trait/ruby",
+    "applied_to": "core",
+    "reachable": true,
+    "predicted_delta": 620.0
+   },
+   "chosen": "roll_trait/ruby"
+  },
+  {
+   "tokens_before": 5,
+   "core": [
+    [
+     "towers",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     200,
+     230,
+     270
+    ],
+    "mid": [
+     330,
+     100,
+     270
+    ],
+    "support": [
+     300,
+     150,
+     200
+    ]
+   },
+   "as_of": "2026-08-08",
+   "via": {
+    "op": "increase_one_quality/none",
+    "applied_to": "core",
+    "reachable": true,
+    "predicted_delta": 1663.0
+   },
+   "chosen": "increase_one_quality"
+  },
+  {
+   "tokens_before": 0,
+   "core": [
+    [
+     "towers",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     200,
+     230,
+     270
+    ],
+    "mid": [
+     330,
+     100,
+     270
+    ],
+    "support": [
+     300,
+     150,
+     200
+    ]
+   },
+   "as_of": "2026-08-08",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   }
+  },
+  {
+   "period": "ti",
+   "as_of": "2026-08-13",
+   "tokens_before": 30,
+   "open": "core",
+   "core": [
+    [
+     "towers",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     2,
+     "unique"
+    ],
+    [
+     "courier",
+     1,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ],
+    [
+     "roshan",
+     4,
+     "friendly"
+    ],
+    [
+     "lotus",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "OG"
+   },
+   "shown": {
+    "core": [
+     200,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     100,
+     270,
+     170,
+     110
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     180,
+     250
+    ]
+   },
+   "title": {
+    "prefix": "cerulean",
+    "suffix": "clutch"
+   },
+   "note": "第二期开始：每面 5 枚徽标（链式相邻 ①-②-③-④-⑤），代币重置为 30。小组赛期战旗与本期无关联（客户端另发一套），所以这是新序列的起点。"
+  },
+  {
+   "tokens_before": 29,
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     2,
+     "unique"
+    ],
+    [
+     "courier",
+     1,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ],
+    [
+     "roshan",
+     4,
+     "friendly"
+    ],
+    [
+     "lotus",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "OG"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     100,
+     270,
+     170,
+     110
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     180,
+     250
+    ]
+   },
+   "as_of": "2026-08-15",
+   "period": "ti"
+  },
+  {
+   "tokens_before": 28,
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     1,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     4,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     2,
+     "unique"
+    ],
+    [
+     "courier",
+     1,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ],
+    [
+     "roshan",
+     5,
+     "friendly"
+    ],
+    [
+     "lotus",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "OG"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     100,
+     270,
+     170,
+     110
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-15",
+   "period": "ti"
+  },
+  {
+   "tokens_before": 27,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     2,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     1,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ],
+    [
+     "roshan",
+     5,
+     "friendly"
+    ],
+    [
+     "lotus",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "OG"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     330,
+     190,
+     200,
+     200,
+     110
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-15",
+   "via": {
+    "op": "increase_two_decrease_one/none",
+    "applied_to": "mid",
+    "reachable": true,
+    "predicted_delta": 996.0
+   },
+   "chosen": "increase_two_decrease_one"
+  },
+  {
+   "tokens_before": 26,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     2,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     1,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ],
+    [
+     "roshan",
+     5,
+     "friendly"
+    ],
+    [
+     "lotus",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "OG"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     330,
+     190,
+     200,
+     200,
+     110
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-15",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   }
+  },
+  {
+   "tokens_before": 25,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     1,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     2,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "stacks",
+     2,
+     "vampiric"
+    ],
+    [
+     "roshan",
+     5,
+     "friendly"
+    ],
+    [
+     "lotus",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "OG"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     330,
+     190,
+     180,
+     200,
+     130
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-16",
+   "via": {
+    "op": "roll_quality/emerald",
+    "applied_to": "mid",
+    "reachable": true
+   }
+  },
+  {
+   "tokens_before": 24,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     1,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     2,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "runes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "watchers",
+     2,
+     "vampiric"
+    ],
+    [
+     "roshan",
+     5,
+     "friendly"
+    ],
+    [
+     "smokes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     330,
+     190,
+     180,
+     200,
+     130
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-16",
+   "via": {
+    "op": "roll_stat/sapphire",
+    "applied_to": "support",
+    "reachable": true
+   }
+  },
+  {
+   "tokens_before": 23,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     1,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     2,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "runes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "watchers",
+     2,
+     "vampiric"
+    ],
+    [
+     "roshan",
+     5,
+     "friendly"
+    ],
+    [
+     "smokes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     330,
+     190,
+     180,
+     200,
+     130
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-16",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   }
+  },
+  {
+   "tokens_before": 22,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     2,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     1,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "runes",
+     5,
+     "unique"
+    ],
+    [
+     "teamfight",
+     3,
+     "benevolent"
+    ],
+    [
+     "watchers",
+     2,
+     "vampiric"
+    ],
+    [
+     "roshan",
+     5,
+     "friendly"
+    ],
+    [
+     "smokes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     330,
+     190,
+     200,
+     200,
+     110
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-16",
+   "via": {
+    "op": "roll_quality/emerald",
+    "applied_to": "mid",
+    "reachable": true,
+    "predicted_delta": 1100.0
+   },
+   "chosen": "roll_quality/emerald"
+  },
+  {
+   "tokens_before": 21,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     2,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     1,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "runes",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "watchers",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "smokes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     330,
+     190,
+     200,
+     200,
+     110
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-16",
+   "via": {
+    "op": "roll_stat/emerald",
+    "applied_to": "support",
+    "reachable": true
+   },
+   "chosen": "roll_stat/emerald"
+  },
+  {
+   "tokens_before": 20,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     1,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "runes",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "watchers",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "smokes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     180,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-16",
+   "via": {
+    "op": "roll_quality/emerald",
+    "applied_to": "mid",
+    "reachable": true,
+    "predicted_delta": 684.0
+   },
+   "chosen": "roll_quality/emerald"
+  },
+  {
+   "tokens_before": 19,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     1,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "runes",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "watchers",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "smokes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     180,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-16",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   }
+  },
+  {
+   "tokens_before": 18,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     1,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "lotus",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "runes",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "stacks",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     290,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     180,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-16",
+   "via": {
+    "op": "roll_stat/sapphire",
+    "applied_to": "support",
+    "reachable": true,
+    "predicted_delta": 2740.0
+   },
+   "chosen": "roll_stat/sapphire"
+  },
+  {
+   "tokens_before": 15,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     1,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "lotus",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "runes",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "stacks",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     180,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "chosen": "多步合并(18->15,未逐步记录;净效果 GPM 4阶->5阶)"
+  },
+  {
+   "tokens_before": 14,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "lotus",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "runes",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "stacks",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "increase_one_quality/none",
+    "applied_to": "mid",
+    "reachable": true,
+    "predicted_delta": 1168.0
+   },
+   "chosen": "increase_one_quality"
+  },
+  {
+   "tokens_before": 13,
+   "period": "ti",
+   "core": [
+    [
+     "towers",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "deaths",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "lotus",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "runes",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "stacks",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "roll_stat/last_emerald",
+    "applied_to": "mid",
+    "reachable": true,
+    "predicted_delta": 974.0
+   },
+   "chosen": "roll_stat/last_emerald"
+  },
+  {
+   "tokens_before": 12,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "lotus",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "runes",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "stacks",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "roll_stat/ruby",
+    "applied_to": "core",
+    "reachable": true,
+    "predicted_delta": 352.0
+   },
+   "chosen": "roll_stat/ruby"
+  },
+  {
+   "tokens_before": 11,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "lotus",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "runes",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "stacks",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   },
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 10,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "lotus",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "runes",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "stacks",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   },
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 9,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "lotus",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "runes",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "stacks",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   },
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 8,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     1,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "wards",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "runes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     180,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "roll_stat/sapphire",
+    "applied_to": "support",
+    "reachable": true,
+    "predicted_delta": 2464.0
+   },
+   "chosen": "roll_stat/sapphire"
+  },
+  {
+   "tokens_before": 7,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     3,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ],
+    [
+     "wards",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "runes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     230,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "roll_quality/first_ruby",
+    "applied_to": "core",
+    "reachable": true,
+    "predicted_delta": 1380.0
+   },
+   "chosen": "roll_quality/first_ruby"
+  },
+  {
+   "tokens_before": 6,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     3,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "firstblood",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ],
+    [
+     "wards",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "runes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     230,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "roll_stat/first_emerald",
+    "applied_to": "support",
+    "reachable": true,
+    "predicted_delta": 454.0
+   },
+   "chosen": "roll_stat/first_emerald"
+  },
+  {
+   "tokens_before": 5,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     3,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "roshan",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ],
+    [
+     "wards",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "runes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     230,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "roll_stat/last_emerald",
+    "applied_to": "mid",
+    "reachable": true,
+    "predicted_delta": 1464.0
+   },
+   "chosen": "roll_stat/last_emerald"
+  },
+  {
+   "tokens_before": 4,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     3,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "roshan",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ],
+    [
+     "wards",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "runes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     230,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   },
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 3,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     3,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "roshan",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ],
+    [
+     "wards",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "runes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     230,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   },
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 2,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     3,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "roshan",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ],
+    [
+     "wards",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "runes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     230,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   },
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 1,
+   "period": "ti",
+   "core": [
+    [
+     "kills",
+     3,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "madstone",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "gpm",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "roshan",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ],
+    [
+     "wards",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "runes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     230,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "reroll_options",
+    "applied_to": null
+   },
+   "chosen": "reroll_options"
+  },
+  {
+   "tokens_before": 0,
+   "period": "ti",
+   "core": [
+    [
+     "cs",
+     3,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "benevolent"
+    ],
+    [
+     "towers",
+     5,
+     "vampiric"
+    ],
+    [
+     "stuns",
+     3,
+     "benevolent"
+    ],
+    [
+     "kills",
+     4,
+     "vampiric"
+    ]
+   ],
+   "mid": [
+    [
+     "cs",
+     5,
+     "fractal"
+    ],
+    [
+     "runes",
+     4,
+     "benevolent"
+    ],
+    [
+     "teamfight",
+     5,
+     "vampiric"
+    ],
+    [
+     "gpm",
+     3,
+     "unique"
+    ],
+    [
+     "roshan",
+     3,
+     "benevolent"
+    ]
+   ],
+   "support": [
+    [
+     "smokes",
+     5,
+     "unique"
+    ],
+    [
+     "courier",
+     3,
+     "benevolent"
+    ],
+    [
+     "wards",
+     2,
+     "vampiric"
+    ],
+    [
+     "teamfight",
+     5,
+     "friendly"
+    ],
+    [
+     "runes",
+     4,
+     "vampiric"
+    ]
+   ],
+   "teams": {
+    "core": "Team Vision",
+    "mid": "Team Liquid",
+    "support": "Team Vision"
+   },
+   "shown": {
+    "core": [
+     230,
+     230,
+     340,
+     140,
+     270
+    ],
+    "mid": [
+     270,
+     190,
+     320,
+     200,
+     160
+    ],
+    "support": [
+     300,
+     150,
+     200,
+     230,
+     250
+    ]
+   },
+   "as_of": "2026-08-17",
+   "via": {
+    "op": "roll_stat/ruby",
+    "applied_to": "core",
+    "reachable": true,
+    "predicted_delta": 2191.0
+   },
+   "chosen": "roll_stat/ruby"
+  }
+ ],
+ "known_in_pool": {
+  "increase_quality": {
+   "confirmed": true,
+   "source": "用户直接观察，2026-08-15 澄清",
+   "note": "每次出现即被采用，故不出现在 draws 里。43 个 (目标,战旗) 组合实测 E[Δ] 全部 >= 0，无下行分支。"
+  },
+  "increase_one_quality": {
+   "confirmed": true,
+   "source": "2026-08-08 亲眼见于牌面（代币 6→5）"
+  },
+  "increase_two_decrease_one": {
+   "confirmed": true,
+   "source": "2026-08-08 使用过"
+  },
+  "roll_quality": {
+   "confirmed": true
+  },
+  "roll_trait": {
+   "confirmed": true
+  },
+  "roll_stat": {
+   "confirmed": true
+  }
+ }
+}
