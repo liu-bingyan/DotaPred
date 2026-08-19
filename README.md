@@ -61,6 +61,24 @@ after it. The decay *is* real across all 130 events including online leagues
 played somewhere else. The premium CI is wide enough to contain the pooled
 estimate, so this is "not detectable at LAN level", not "proven absent".
 
+**Player form is real, survives the break, and is useless for prediction.**
+Per-game individual production (10 per-minute stats, z-scored within a
+net-worth-derived position, residualised against how the team's game went)
+minus that player's own 365-day baseline gives a form variable that
+autocorrelates at r = +0.43 within a group stage — and at r = +0.41 *across*
+the break (decay −0.019, n = 1,306). That is a second, independent confirmation
+of the no-break-effect result, from a completely different observable. But once
+the team rating already contains the group stage, form adds +0.0003 log-loss
+(t = +0.29 over 304 post-break series). It flags Team Yandex as the only team
+at TI2026 whose five players are collectively below baseline — and at the fitted
+coefficient, using it changes none of the 14 bracket picks.
+
+**Head-to-head history adds nothing to a rating.** Over 385 post-break series,
+the shrunk net head-to-head record has coefficient +0.039 (t = +0.12) on top of
+the rating, and the within-event version is *negative* (−1.283, t = −1.13).
+Betting the head-to-head alone hits 54.9% where the rating hits 66.9%; in the 84
+series where the two disagree, the rating is right 64.3% of the time.
+
 **The ambiguous scoring rule turned out not to matter.** The client says only
 "pick the team you think is going to win each series", which leaves open whether
 a pick still counts when the team arrives at that node by a different path.
@@ -156,6 +174,10 @@ for hl in 45 60 150; do
           --out data/playoff_probs_hl$hl.json
 done
 python3 scripts/bracket_model_average.py data/playoff_probs_hl{45,60,150}.json
+python3 scripts/fetch_premium_player_stats.py  # 80k player-game rows, premium tier
+python3 scripts/player_form.py                 # does player form survive the break?
+python3 scripts/ti_player_form.py              # the 40 playoff players right now
+python3 scripts/h2h_value.py                   # is head-to-head worth anything?
 ```
 
 ## Data sources
