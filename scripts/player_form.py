@@ -224,8 +224,11 @@ def main():
     X = np.array(X)
     y = np.array(y)
     grp = np.array(grp)
-    X[:, 2] /= (np.std(X[:, 2]) or 1.0)
+    sd_raw = float(np.std(X[:, 2])) or 1.0
+    X[:, 2] /= sd_raw
     print(f"问题 3：增量预测力（{len(y)} 个断点后系列赛，{len(set(grp))} 个赛事）")
+    print(f"  x_form_player 标准化前的 SD = {sd_raw:.4f}"
+          f"（历史赛事上两队 form 差的离散度）")
 
     def report(name, cols, labels):
         b = BE.logistic(X[:, cols], y)
@@ -243,6 +246,18 @@ def main():
     l2 = report("+ 选手级 form", [0, 1, 2],
                 ["x_rating", "x_form_team", "x_form_player"])
     print(f"\n  logloss 改善：加队伍级状态 {l0 - l1:+.4f}   再加选手级 form {l1 - l2:+.4f}")
+
+    # 把标准化系数换算成「强度 = 基础强度 + k × 队均 form」里的 k
+    b = BE.logistic(X[:, [0, 1, 2]], y)
+    se = BE.cluster_se(X[:, [0, 1, 2]], y, b, grp)
+    k_hat, k_se = b[2] / sd_raw, se[2] / sd_raw
+    print(f"\n  换算成强度调整系数 k（strength += k × 队均 form 偏离）:")
+    print(f"    k = {k_hat:+.2f}  (SE {k_se:.2f}, t {b[2] / se[2]:+.2f})")
+    print(f"    95% 区间 [{k_hat - 1.96 * k_se:+.2f}, {k_hat + 1.96 * k_se:+.2f}]")
+    from math import erf, sqrt
+    for thr, what in ((1.0, "改 1 票 (LB2-1, 值 6 分)"), (2.0, "改 3 票")):
+        pr = 0.5 * (1 - erf((thr - k_hat) / (k_se * sqrt(2))))
+        print(f"    P(k >= {thr:g}) = {pr:.1%}   -> {what}")
 
 
 if __name__ == "__main__":
